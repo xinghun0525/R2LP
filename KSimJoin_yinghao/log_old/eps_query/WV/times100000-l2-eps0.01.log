@@ -1,0 +1,15 @@
+Wed Mar 29 21:28:56 2023
+
+filename = WV, times = 100000, length = 2
+idx_path = ../ground_idx/WV/idx1
+ground_idx.size = 7115
+gtnum = 889960
+anspath = result/WV/times100000_length2.txt
+mynum = 857663
+ground truth pairs num = 889960
+my pairs num = 857663
+match pairs num = 857663
+precision = 1
+recall = 0.96371
+f1 score = 0.981519
+avg_error = 8.47816e-05

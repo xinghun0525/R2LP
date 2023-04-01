@@ -1,0 +1,15 @@
+Mon Feb 20 01:30:48 2023
+
+filename = SD, eps = 0.01
+idx_path = ../ground_idx/SD/idx1
+ground_idx.size = 82168
+gtnum = 36883790
+anspath = ../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/SD.ans_eps0.010000
+mynum = 26011149
+ground truth pairs num = 36883790
+my pairs num = 13005769
+match pairs num = 13005769
+precision = 1
+recall = 0.352615
+f1 score = 0.521382
+avg_error = 0.00140633

@@ -1,0 +1,15 @@
+Sat Dec 24 13:59:36 2022
+
+filename = CP, eps = 0.1, threshold = 0.05
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 970
+anspath = ../SimRankRelease-master/Local-Push/eps_result/CP.ans_t0.050000_eps0.100000
+mynum = 953
+ground truth pairs num = 970
+my pairs num = 953
+match pairs num = 953
+precision = 1
+recall = 0.982474
+f1 score = 0.99116
+avg_error = 0.00254051

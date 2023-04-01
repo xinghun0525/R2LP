@@ -1,0 +1,10 @@
+Sun Mar 12 18:03:58 2023
+
+filename = CG, topk = 10000
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 5784282
+anspath = ../rbs-sim_exp/result_topk/CG/topk_10000
+mynum = 10000
+ground truth pairs num = 10001
+accu = 0.8764

@@ -1,0 +1,15 @@
+Wed Feb 15 18:01:34 2023
+
+filename = WV, eps = 0.01
+idx_path = ../ground_idx/WV/idx1
+ground_idx.size = 7115
+gtnum = 889960
+anspath = ../rbs-sim_exp/result_eps/WV/eps_0.010000
+mynum = 736856
+ground truth pairs num = 889960
+my pairs num = 736856
+match pairs num = 736810
+precision = 0.999938
+recall = 0.827914
+f1 score = 0.905831
+avg_error = 0.000424918

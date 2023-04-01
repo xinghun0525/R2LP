@@ -1,0 +1,15 @@
+Tue Feb 21 20:01:21 2023
+
+filename = LJ, eps = 0.01
+idx_path = ../ground_idx/LJ/idx1
+ground_idx.size = 100
+gtnum = 33782
+anspath = ../SimRankRelease-master_exp_flp_large_graph/Local-Push/eps_result_flp/LJ.ans_eps0.010000
+mynum = 21604
+ground truth pairs num = 33782
+my pairs num = 10804
+match pairs num = 10804
+precision = 1
+recall = 0.319815
+f1 score = 0.484636
+avg_error = 0.00161983

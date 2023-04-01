@@ -1,0 +1,15 @@
+Wed Mar 22 17:08:55 2023
+
+filename = DB, eps = 0.001
+idx_path = ../ground_idx/DB/idx1
+ground_idx.size = 317080
+gtnum = 844472
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/DB.ans_eps0.001000
+mynum = 842022
+ground truth pairs num = 844472
+my pairs num = 842022
+match pairs num = 842022
+precision = 1
+recall = 0.997099
+f1 score = 0.998547
+avg_error = 0.000577523

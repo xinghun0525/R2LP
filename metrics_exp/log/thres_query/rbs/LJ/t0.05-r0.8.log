@@ -1,0 +1,15 @@
+Mon Mar 20 00:42:00 2023
+
+filename = LJ, rou = 0.8, threshold = 0.05
+idx_path = ../ground_idx/LJ/idx1
+ground_idx.size = 100
+gtnum = 969
+anspath = ../rbs-sim_exp/result_thres/LJ/t0.050000_r0.800000
+mynum = 957
+ground truth pairs num = 969
+my pairs num = 957
+match pairs num = 957
+precision = 1
+recall = 0.987616
+f1 score = 0.993769
+avg_error = 0.00129624

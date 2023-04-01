@@ -1,0 +1,15 @@
+Sat Dec 24 14:06:07 2022
+
+filename = CG, eps = 0.01, threshold = 0.1
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 8787
+anspath = ../SimRankRelease-master/Local-Push/eps_result/CG.ans_t0.100000_eps0.010000
+mynum = 8495
+ground truth pairs num = 8787
+my pairs num = 8495
+match pairs num = 8495
+precision = 1
+recall = 0.966769
+f1 score = 0.983104
+avg_error = 0.00635532

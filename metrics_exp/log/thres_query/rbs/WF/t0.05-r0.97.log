@@ -1,0 +1,15 @@
+Sat Mar 18 17:04:40 2023
+
+filename = WF, rou = 0.97, threshold = 0.05
+idx_path = ../ground_idx/WF/idx1
+ground_idx.size = 65562
+gtnum = 840905
+anspath = ../rbs-sim_exp/result_thres/WF/t0.050000_r0.970000
+mynum = 837035
+ground truth pairs num = 840905
+my pairs num = 837035
+match pairs num = 837015
+precision = 0.999976
+recall = 0.995374
+f1 score = 0.99767
+avg_error = 0.000578856

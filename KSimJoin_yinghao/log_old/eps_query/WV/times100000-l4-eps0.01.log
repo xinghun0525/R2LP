@@ -1,0 +1,13 @@
+filepath: /data/geQian/packing_gq/dataset/WV.txt, max_length: 4, times: 100000, eps: 0.01
+Vertice num = 7115
+Edge num = 103689
+loading graph takes 0.03 s.
+sort_node start ! 
+
+sort node finished 
+
+正在Init_NP
+Init_NP finished. cost 8.95 s, NP_l size is 5
+开始计算SimRank
+compute IncrementalSimRank(R, 1), get_second_possibility() already cost 0 s
+compute IncrementalSimRank(R, 2), get_second_possibility() already cost 0 s

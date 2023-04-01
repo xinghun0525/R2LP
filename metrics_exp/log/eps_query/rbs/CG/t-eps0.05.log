@@ -1,0 +1,15 @@
+Wed Feb 15 18:01:00 2023
+
+filename = CG, eps = 0.05
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 392573
+anspath = ../rbs-sim_exp/result_eps/CG/eps_0.050000
+mynum = 76895
+ground truth pairs num = 392573
+my pairs num = 76895
+match pairs num = 76839
+precision = 0.999272
+recall = 0.195732
+f1 score = 0.327345
+avg_error = 0.0044969

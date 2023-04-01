@@ -1,0 +1,15 @@
+Wed Mar 22 01:15:26 2023
+
+filename = WF, eps = 0.01
+idx_path = ../ground_idx/WF/idx1
+ground_idx.size = 65562
+gtnum = 3317979
+anspath = ../rbs-sim_exp/result_eps/WF/eps_0.010000
+mynum = 2901598
+ground truth pairs num = 3317979
+my pairs num = 2901598
+match pairs num = 2900810
+precision = 0.999728
+recall = 0.87427
+f1 score = 0.9328
+avg_error = 0.0031137

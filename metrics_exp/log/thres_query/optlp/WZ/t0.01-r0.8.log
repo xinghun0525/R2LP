@@ -1,0 +1,7 @@
+Mon Mar 20 00:37:24 2023
+
+filename = WZ, rou = 0.8, threshold = 0.01
+idx_path = ../ground_idx/WZ/idx1
+ground_idx.size = 100
+gtnum = 20300
+anspath = ../SimRankRelease-master_exp/Local-Push/thres_result/WZ.ans_t0.010000_r0.800000

@@ -1,0 +1,15 @@
+Wed Mar 22 01:09:52 2023
+
+filename = DB, eps = 0.001
+idx_path = ../ground_idx/DB/idx1
+ground_idx.size = 317080
+gtnum = 6943262
+anspath = ../rbs-sim_exp/result_eps/DB/eps_0.001000
+mynum = 6645595
+ground truth pairs num = 6943262
+my pairs num = 6645595
+match pairs num = 6645572
+precision = 0.999997
+recall = 0.957125
+f1 score = 0.978091
+avg_error = 0.00113501

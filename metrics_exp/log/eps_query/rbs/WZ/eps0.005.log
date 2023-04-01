@@ -1,0 +1,15 @@
+Fri Feb 17 16:29:44 2023
+
+filename = WZ, eps = 0.005
+idx_path = ../ground_idx/WZ/idx1
+ground_idx.size = 100
+gtnum = 79065
+anspath = ../rbs-sim_exp/result_eps/WZ/eps_0.005000
+mynum = 63624
+ground truth pairs num = 79062
+my pairs num = 63624
+match pairs num = 63330
+precision = 0.995379
+recall = 0.801017
+f1 score = 0.887683
+avg_error = 0.000776209

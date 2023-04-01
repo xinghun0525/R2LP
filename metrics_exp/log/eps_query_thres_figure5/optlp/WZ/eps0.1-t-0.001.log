@@ -1,0 +1,15 @@
+Wed Mar 22 00:56:03 2023
+
+filename = WZ, eps = 0.1
+idx_path = ../ground_idx/WZ/idx1
+ground_idx.size = 100
+gtnum = 79065
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/WZ.ans_eps0.100000
+mynum = 0
+ground truth pairs num = 79062
+my pairs num = 0
+match pairs num = 0
+precision = -nan
+recall = 0
+f1 score = -nan
+avg_error = 0.0451441

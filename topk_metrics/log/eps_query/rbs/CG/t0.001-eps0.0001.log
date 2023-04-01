@@ -1,0 +1,7 @@
+Tue Dec 27 17:37:57 2022
+
+filename = CG, eps = 0.0001, threshold = 0.001
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 392545
+anspath = ../rbs-sim/result/CG/eps0.000100t0.001000

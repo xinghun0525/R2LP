@@ -1,0 +1,15 @@
+Wed Mar 22 00:56:02 2023
+
+filename = CP, eps = 0.05
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 436
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/CP.ans_eps0.050000
+mynum = 436
+ground truth pairs num = 436
+my pairs num = 436
+match pairs num = 436
+precision = 1
+recall = 1
+f1 score = 1
+avg_error = 0.000753083

@@ -1,0 +1,16 @@
+Fri Feb 17 18:06:08 2023
+
+filename = CG, eps = 2096
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 392573
+anspath = ../UISim_yinghao/result/CG/Hubs2096
+44.520000s
+mynum = 226984
+ground truth pairs num = 392573
+my pairs num = 226984
+match pairs num = 226984
+precision = 1
+recall = 0.578196
+f1 score = 0.73273
+avg_error = 0.00239291

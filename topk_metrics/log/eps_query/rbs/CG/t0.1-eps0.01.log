@@ -1,0 +1,15 @@
+Sat Dec 24 14:03:41 2022
+
+filename = CG, eps = 0.01, threshold = 0.1
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 8787
+anspath = ../rbs-sim/result/CG/eps0.010000t0.100000
+mynum = 8181
+ground truth pairs num = 8787
+my pairs num = 8181
+match pairs num = 8181
+precision = 1
+recall = 0.931034
+f1 score = 0.964286
+avg_error = 0.0147421

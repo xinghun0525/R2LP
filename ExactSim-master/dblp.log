@@ -1,0 +1,317 @@
+Nodes n=5425963
+Edges m=17298032
+reading in graph takes 4.66 s.
+====Graphs reading done!====
+
+eps: 1e-06
+decay c: 0.6
+Sampling times: 174091823
+Iteration times: 28
+====init done!====
+
+querynum=100
+0: 895249
+querytime = 115.08
+Outfile address:results/dblp-author/1e-06/895249.txt
+1: 5302680
+querytime = 118.89
+Outfile address:results/dblp-author/1e-06/5302680.txt
+2: 4520604
+querytime = 147.34
+Outfile address:results/dblp-author/1e-06/4520604.txt
+3: 4668004
+querytime = 134.61
+Outfile address:results/dblp-author/1e-06/4668004.txt
+4: 1128593
+querytime = 146.3
+Outfile address:results/dblp-author/1e-06/1128593.txt
+5: 4983754
+querytime = 144.5
+Outfile address:results/dblp-author/1e-06/4983754.txt
+6: 4633693
+querytime = 134.18
+Outfile address:results/dblp-author/1e-06/4633693.txt
+7: 2293433
+querytime = 113.35
+Outfile address:results/dblp-author/1e-06/2293433.txt
+8: 5294454
+querytime = 123.73
+Outfile address:results/dblp-author/1e-06/5294454.txt
+9: 5184385
+querytime = 133.23
+Outfile address:results/dblp-author/1e-06/5184385.txt
+10: 5087098
+querytime = 100.61
+Outfile address:results/dblp-author/1e-06/5087098.txt
+11: 4933581
+querytime = 134.96
+Outfile address:results/dblp-author/1e-06/4933581.txt
+12: 2234967
+querytime = 112.34
+Outfile address:results/dblp-author/1e-06/2234967.txt
+13: 2208186
+querytime = 125.51
+Outfile address:results/dblp-author/1e-06/2208186.txt
+14: 1599058
+querytime = 116.53
+Outfile address:results/dblp-author/1e-06/1599058.txt
+15: 4633706
+querytime = 127.58
+Outfile address:results/dblp-author/1e-06/4633706.txt
+16: 5129429
+querytime = 95.07
+Outfile address:results/dblp-author/1e-06/5129429.txt
+17: 4484746
+querytime = 124.3
+Outfile address:results/dblp-author/1e-06/4484746.txt
+18: 1442379
+querytime = 127.76
+Outfile address:results/dblp-author/1e-06/1442379.txt
+19: 2219511
+querytime = 100.05
+Outfile address:results/dblp-author/1e-06/2219511.txt
+20: 4354302
+querytime = 100.06
+Outfile address:results/dblp-author/1e-06/4354302.txt
+21: 2357782
+querytime = 134.63
+Outfile address:results/dblp-author/1e-06/2357782.txt
+22: 4293100
+querytime = 99.65
+Outfile address:results/dblp-author/1e-06/4293100.txt
+23: 4317085
+querytime = 94.25
+Outfile address:results/dblp-author/1e-06/4317085.txt
+24: 1885050
+querytime = 148.67
+Outfile address:results/dblp-author/1e-06/1885050.txt
+25: 5194738
+querytime = 108.6
+Outfile address:results/dblp-author/1e-06/5194738.txt
+26: 4411948
+querytime = 138.39
+Outfile address:results/dblp-author/1e-06/4411948.txt
+27: 967740
+querytime = 102.69
+Outfile address:results/dblp-author/1e-06/967740.txt
+28: 4553218
+querytime = 126.26
+Outfile address:results/dblp-author/1e-06/4553218.txt
+29: 4761013
+querytime = 126.26
+Outfile address:results/dblp-author/1e-06/4761013.txt
+30: 4413171
+querytime = 130.38
+Outfile address:results/dblp-author/1e-06/4413171.txt
+31: 1624940
+querytime = 139.33
+Outfile address:results/dblp-author/1e-06/1624940.txt
+32: 1247689
+querytime = 164.97
+Outfile address:results/dblp-author/1e-06/1247689.txt
+33: 2346532
+querytime = 128.08
+Outfile address:results/dblp-author/1e-06/2346532.txt
+34: 1140005
+querytime = 127.52
+Outfile address:results/dblp-author/1e-06/1140005.txt
+35: 2129405
+querytime = 97.71
+Outfile address:results/dblp-author/1e-06/2129405.txt
+36: 4658436
+querytime = 97.77
+Outfile address:results/dblp-author/1e-06/4658436.txt
+37: 1623782
+querytime = 97.71
+Outfile address:results/dblp-author/1e-06/1623782.txt
+38: 5305696
+querytime = 154.46
+Outfile address:results/dblp-author/1e-06/5305696.txt
+39: 5169077
+querytime = 153.73
+Outfile address:results/dblp-author/1e-06/5169077.txt
+40: 2356807
+querytime = 112.37
+Outfile address:results/dblp-author/1e-06/2356807.txt
+41: 1149919
+querytime = 113.51
+Outfile address:results/dblp-author/1e-06/1149919.txt
+42: 5312697
+querytime = 133.47
+Outfile address:results/dblp-author/1e-06/5312697.txt
+43: 1624633
+querytime = 100.96
+Outfile address:results/dblp-author/1e-06/1624633.txt
+44: 4652383
+querytime = 130.6
+Outfile address:results/dblp-author/1e-06/4652383.txt
+45: 1441676
+querytime = 136.17
+Outfile address:results/dblp-author/1e-06/1441676.txt
+46: 427011
+querytime = 142.41
+Outfile address:results/dblp-author/1e-06/427011.txt
+47: 5129544
+querytime = 114.12
+Outfile address:results/dblp-author/1e-06/5129544.txt
+48: 1241045
+querytime = 142.66
+Outfile address:results/dblp-author/1e-06/1241045.txt
+49: 4495414
+querytime = 114.06
+Outfile address:results/dblp-author/1e-06/4495414.txt
+50: 2123087
+querytime = 111.68
+Outfile address:results/dblp-author/1e-06/2123087.txt
+51: 2049036
+querytime = 122.76
+Outfile address:results/dblp-author/1e-06/2049036.txt
+52: 1589395
+querytime = 105.42
+Outfile address:results/dblp-author/1e-06/1589395.txt
+53: 4438014
+querytime = 151.93
+Outfile address:results/dblp-author/1e-06/4438014.txt
+54: 4287334
+querytime = 138.97
+Outfile address:results/dblp-author/1e-06/4287334.txt
+55: 111554
+querytime = 121.14
+Outfile address:results/dblp-author/1e-06/111554.txt
+56: 4891508
+querytime = 95.03
+Outfile address:results/dblp-author/1e-06/4891508.txt
+57: 2026436
+querytime = 106.7
+Outfile address:results/dblp-author/1e-06/2026436.txt
+58: 476245
+querytime = 170.77
+Outfile address:results/dblp-author/1e-06/476245.txt
+59: 2145554
+querytime = 109.69
+Outfile address:results/dblp-author/1e-06/2145554.txt
+60: 2090089
+querytime = 131.53
+Outfile address:results/dblp-author/1e-06/2090089.txt
+61: 4359649
+querytime = 133.32
+Outfile address:results/dblp-author/1e-06/4359649.txt
+62: 2171770
+querytime = 133.32
+Outfile address:results/dblp-author/1e-06/2171770.txt
+63: 111308
+querytime = 101.2
+Outfile address:results/dblp-author/1e-06/111308.txt
+64: 22985
+querytime = 74.79
+Outfile address:results/dblp-author/1e-06/22985.txt
+65: 273394
+querytime = 124.82
+Outfile address:results/dblp-author/1e-06/273394.txt
+66: 625105
+querytime = 110.26
+Outfile address:results/dblp-author/1e-06/625105.txt
+67: 4388110
+querytime = 101.86
+Outfile address:results/dblp-author/1e-06/4388110.txt
+68: 2140941
+querytime = 101.89
+Outfile address:results/dblp-author/1e-06/2140941.txt
+69: 4652951
+querytime = 110.97
+Outfile address:results/dblp-author/1e-06/4652951.txt
+70: 427606
+querytime = 110.99
+Outfile address:results/dblp-author/1e-06/427606.txt
+71: 657154
+querytime = 103.26
+Outfile address:results/dblp-author/1e-06/657154.txt
+72: 1786799
+querytime = 109.05
+Outfile address:results/dblp-author/1e-06/1786799.txt
+73: 5299189
+querytime = 109.03
+Outfile address:results/dblp-author/1e-06/5299189.txt
+74: 1107750
+querytime = 109.06
+Outfile address:results/dblp-author/1e-06/1107750.txt
+75: 5257013
+querytime = 117.16
+Outfile address:results/dblp-author/1e-06/5257013.txt
+76: 290892
+querytime = 121.07
+Outfile address:results/dblp-author/1e-06/290892.txt
+77: 1356548
+querytime = 187.9
+Outfile address:results/dblp-author/1e-06/1356548.txt
+78: 303545
+querytime = 187.91
+Outfile address:results/dblp-author/1e-06/303545.txt
+79: 2356139
+querytime = 122.75
+Outfile address:results/dblp-author/1e-06/2356139.txt
+80: 5128546
+querytime = 90.85
+Outfile address:results/dblp-author/1e-06/5128546.txt
+81: 2173176
+querytime = 138.4
+Outfile address:results/dblp-author/1e-06/2173176.txt
+82: 5041711
+querytime = 174.42
+Outfile address:results/dblp-author/1e-06/5041711.txt
+83: 1624983
+querytime = 89.13
+Outfile address:results/dblp-author/1e-06/1624983.txt
+84: 1805785
+querytime = 120.63
+Outfile address:results/dblp-author/1e-06/1805785.txt
+85: 4373204
+querytime = 87.23
+Outfile address:results/dblp-author/1e-06/4373204.txt
+86: 4594966
+querytime = 87.21
+Outfile address:results/dblp-author/1e-06/4594966.txt
+87: 121136
+querytime = 87.21
+Outfile address:results/dblp-author/1e-06/121136.txt
+88: 2132125
+querytime = 87.23
+Outfile address:results/dblp-author/1e-06/2132125.txt
+89: 2016222
+querytime = 138.26
+Outfile address:results/dblp-author/1e-06/2016222.txt
+90: 2358179
+querytime = 121.99
+Outfile address:results/dblp-author/1e-06/2358179.txt
+91: 5313024
+querytime = 152.84
+Outfile address:results/dblp-author/1e-06/5313024.txt
+92: 1591541
+querytime = 88.44
+Outfile address:results/dblp-author/1e-06/1591541.txt
+93: 556987
+querytime = 138.12
+Outfile address:results/dblp-author/1e-06/556987.txt
+94: 4581867
+querytime = 187.44
+Outfile address:results/dblp-author/1e-06/4581867.txt
+95: 4619436
+querytime = 135.31
+Outfile address:results/dblp-author/1e-06/4619436.txt
+96: 1453266
+querytime = 94.73
+Outfile address:results/dblp-author/1e-06/1453266.txt
+97: 5357954
+querytime = 152.79
+Outfile address:results/dblp-author/1e-06/5357954.txt
+98: 4817379
+querytime = 136.34
+Outfile address:results/dblp-author/1e-06/4817379.txt
+99: 2341872
+querytime = 179.12
+Outfile address:results/dblp-author/1e-06/2341872.txt
+
+====ExactSim done!====
+
+Average Query Time: 123.113 s
+

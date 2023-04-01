@@ -1,0 +1,15 @@
+Fri Mar 17 16:38:22 2023
+
+filename = CP, rou = 0.9, threshold = 0.01
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 4916
+anspath = ../rbs-sim_exp/result_thres/CP/t0.010000_r0.900000
+mynum = 4913
+ground truth pairs num = 4916
+my pairs num = 4913
+match pairs num = 4913
+precision = 1
+recall = 0.99939
+f1 score = 0.999695
+avg_error = 1.42632e-05

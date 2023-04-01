@@ -1,0 +1,7 @@
+Fri Mar 17 16:38:23 2023
+
+filename = LJ, rou = 0.8, threshold = 0.01
+idx_path = ../ground_idx/LJ/idx1
+ground_idx.size = 100
+gtnum = 5137
+anspath = ../rbs-sim_exp/result_thres/LJ/t0.010000_r0.800000

@@ -1,0 +1,15 @@
+Fri Feb 17 07:38:18 2023
+
+filename = ND, eps = 0.005
+idx_path = ../ground_idx/ND/idx1
+ground_idx.size = 325729
+gtnum = -1231518898
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/ND.ans_eps0.005000
+mynum = 1639704380
+ground truth pairs num = 3063448398
+my pairs num = 1639704380
+match pairs num = 1639704380
+precision = 1
+recall = 0.535248
+f1 score = 0.697279
+avg_error = 0.00146776

@@ -1,0 +1,16 @@
+Fri Feb 17 18:15:30 2023
+
+filename = WV, eps = 1423
+idx_path = ../ground_idx/WV/idx1
+ground_idx.size = 7115
+gtnum = 889960
+anspath = ../UISim_yinghao/result/WV/Hubs1423
+254.880000s
+mynum = 805861
+ground truth pairs num = 889960
+my pairs num = 805861
+match pairs num = 805861
+precision = 1
+recall = 0.905502
+f1 score = 0.950408
+avg_error = 0.000199805

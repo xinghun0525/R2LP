@@ -1,0 +1,15 @@
+Fri Mar 17 16:38:25 2023
+
+filename = WZ, rou = 0.8, threshold = 0.01
+idx_path = ../ground_idx/WZ/idx1
+ground_idx.size = 100
+gtnum = 20300
+anspath = ../rbs-sim_exp/result_thres/WZ/t0.010000_r0.800000
+mynum = 19715
+ground truth pairs num = 20298
+my pairs num = 19715
+match pairs num = 19713
+precision = 0.999899
+recall = 0.971179
+f1 score = 0.98533
+avg_error = 0.000946757

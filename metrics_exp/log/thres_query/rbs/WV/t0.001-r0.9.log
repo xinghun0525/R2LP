@@ -1,0 +1,15 @@
+Fri Mar 17 16:55:40 2023
+
+filename = WV, rou = 0.9, threshold = 0.001
+idx_path = ../ground_idx/WV/idx1
+ground_idx.size = 7115
+gtnum = 889871
+anspath = ../rbs-sim_exp/result_thres/WV/t0.001000_r0.900000
+mynum = 886220
+ground truth pairs num = 889871
+my pairs num = 886220
+match pairs num = 886061
+precision = 0.999821
+recall = 0.995718
+f1 score = 0.997765
+avg_error = 9.0727e-06

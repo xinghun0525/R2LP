@@ -1,0 +1,15 @@
+Sat Dec 24 14:01:01 2022
+
+filename = CP, eps = 0.05, threshold = 0.1
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 436
+anspath = ../rbs-sim/result/CP/eps0.050000t0.100000
+mynum = 434
+ground truth pairs num = 436
+my pairs num = 434
+match pairs num = 434
+precision = 1
+recall = 0.995413
+f1 score = 0.997701
+avg_error = 0.00100988

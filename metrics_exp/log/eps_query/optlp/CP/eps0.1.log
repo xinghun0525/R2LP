@@ -1,0 +1,15 @@
+Fri Feb 17 19:11:49 2023
+
+filename = CP, eps = 0.1
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 22172
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/CP.ans_eps0.100000
+mynum = 1170
+ground truth pairs num = 22172
+my pairs num = 1170
+match pairs num = 1170
+precision = 1
+recall = 0.0527693
+f1 score = 0.100248
+avg_error = 0.00574083

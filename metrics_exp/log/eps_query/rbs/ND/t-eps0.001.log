@@ -1,0 +1,15 @@
+Thu Feb 16 23:08:43 2023
+
+filename = ND, eps = 0.001
+idx_path = ../ground_idx/ND/idx1
+ground_idx.size = 325729
+gtnum = -1231518898
+anspath = ../rbs-sim_exp/result_eps/ND/eps_0.001000
+mynum = -2032871978
+ground truth pairs num = 3063448398
+my pairs num = 2262095318
+match pairs num = 2262058384
+precision = 0.999984
+recall = 0.738403
+f1 score = 0.849513
+avg_error = 0.000911616

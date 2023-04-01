@@ -1,0 +1,7 @@
+Mon Mar 20 00:37:22 2023
+
+filename = LJ, rou = 0.9, threshold = 0.1
+idx_path = ../ground_idx/LJ/idx1
+ground_idx.size = 100
+gtnum = 394
+anspath = ../SimRankRelease-master_exp/Local-Push/thres_result/LJ.ans_t0.100000_r0.900000

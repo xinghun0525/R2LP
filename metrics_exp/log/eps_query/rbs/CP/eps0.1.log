@@ -1,0 +1,15 @@
+Fri Feb 17 19:11:42 2023
+
+filename = CP, eps = 0.1
+idx_path = ../ground_idx/CP/idx1
+ground_idx.size = 100
+gtnum = 22172
+anspath = ../rbs-sim_exp/result_eps/CP/eps_0.100000
+mynum = 7979
+ground truth pairs num = 22172
+my pairs num = 7979
+match pairs num = 7593
+precision = 0.951623
+recall = 0.342459
+f1 score = 0.503665
+avg_error = 0.00296035

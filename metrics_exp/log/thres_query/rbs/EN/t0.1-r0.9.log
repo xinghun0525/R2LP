@@ -1,0 +1,15 @@
+Fri Mar 17 16:55:53 2023
+
+filename = EN, rou = 0.9, threshold = 0.1
+idx_path = ../ground_idx/EN/idx1
+ground_idx.size = 36692
+gtnum = 2036107
+anspath = ../rbs-sim_exp/result_thres/EN/t0.100000_r0.900000
+mynum = 2028303
+ground truth pairs num = 2036107
+my pairs num = 2028303
+match pairs num = 2028291
+precision = 0.999994
+recall = 0.996161
+f1 score = 0.998074
+avg_error = 0.00125395

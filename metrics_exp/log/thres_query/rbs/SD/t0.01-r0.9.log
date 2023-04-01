@@ -1,0 +1,15 @@
+Sat Mar 18 16:52:29 2023
+
+filename = SD, rou = 0.9, threshold = 0.01
+idx_path = ../ground_idx/SD/idx1
+ground_idx.size = 82168
+gtnum = 7410269
+anspath = ../rbs-sim_exp/result_thres/SD/t0.010000_r0.900000
+mynum = 7367945
+ground truth pairs num = 7410269
+my pairs num = 7367945
+match pairs num = 7367944
+precision = 1
+recall = 0.994288
+f1 score = 0.997136
+avg_error = 0.000249452

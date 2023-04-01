@@ -1,0 +1,15 @@
+Sat Mar 18 17:02:57 2023
+
+filename = DB, rou = 0.97, threshold = 0.005
+idx_path = ../ground_idx/DB/idx1
+ground_idx.size = 317080
+gtnum = 10971718
+anspath = ../rbs-sim_exp/result_thres/DB/t0.005000_r0.970000
+mynum = 10856263
+ground truth pairs num = 10971718
+my pairs num = 10856263
+match pairs num = 10856261
+precision = 1
+recall = 0.989477
+f1 score = 0.994711
+avg_error = 0.000126252

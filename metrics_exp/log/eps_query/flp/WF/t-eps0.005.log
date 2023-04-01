@@ -1,0 +1,15 @@
+Mon Feb 20 01:57:54 2023
+
+filename = WF, eps = 0.005
+idx_path = ../ground_idx/WF/idx1
+ground_idx.size = 65562
+gtnum = 33320456
+anspath = ../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/WF.ans_eps0.005000
+mynum = 23792443
+ground truth pairs num = 33320456
+my pairs num = 11961902
+match pairs num = 11961902
+precision = 1
+recall = 0.358996
+f1 score = 0.528325
+avg_error = 0.00129744

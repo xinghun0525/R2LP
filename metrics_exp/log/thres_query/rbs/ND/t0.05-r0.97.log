@@ -1,0 +1,15 @@
+Sat Mar 18 18:22:52 2023
+
+filename = ND, rou = 0.97, threshold = 0.05
+idx_path = ../ground_idx/ND/idx1
+ground_idx.size = 325729
+gtnum = 143706722
+anspath = ../rbs-sim_exp/result_thres/ND/t0.050000_r0.970000
+mynum = 137897642
+ground truth pairs num = 143706722
+my pairs num = 137897642
+match pairs num = 137897435
+precision = 0.999998
+recall = 0.959575
+f1 score = 0.97937
+avg_error = 0.00295568

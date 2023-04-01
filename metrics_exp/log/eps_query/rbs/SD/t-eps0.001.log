@@ -1,0 +1,15 @@
+Thu Feb 16 10:41:01 2023
+
+filename = SD, eps = 0.001
+idx_path = ../ground_idx/SD/idx1
+ground_idx.size = 82168
+gtnum = 36883790
+anspath = ../rbs-sim_exp/result_eps/SD/eps_0.001000
+mynum = 32543699
+ground truth pairs num = 36883790
+my pairs num = 32543699
+match pairs num = 32543000
+precision = 0.999979
+recall = 0.882312
+f1 score = 0.937467
+avg_error = 0.000300405

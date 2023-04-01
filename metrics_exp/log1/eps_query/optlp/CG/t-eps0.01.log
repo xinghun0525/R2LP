@@ -1,0 +1,15 @@
+Mon Feb 20 11:15:28 2023
+
+filename = CG, eps = 0.01
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242
+gtnum = 392573
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/CG.ans_eps0.010000
+mynum = 104007
+ground truth pairs num = 392573
+my pairs num = 104007
+match pairs num = 104007
+precision = 1
+recall = 0.264937
+f1 score = 0.418893
+avg_error = 0.00241559

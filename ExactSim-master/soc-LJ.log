@@ -1,0 +1,317 @@
+Nodes n=4847571
+Edges m=68475391
+reading in graph takes 16.05 s.
+====Graphs reading done!====
+
+eps: 1e-06
+decay c: 0.6
+Sampling times: 173116120
+Iteration times: 28
+====init done!====
+
+querynum=100
+0: 346842
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/346842.txt
+1: 348039
+querytime = 90.01
+Outfile address:results/soc-LiveJournal1/1e-06/348039.txt
+2: 347897
+querytime = 90.05
+Outfile address:results/soc-LiveJournal1/1e-06/347897.txt
+3: 344547
+querytime = 90.63
+Outfile address:results/soc-LiveJournal1/1e-06/344547.txt
+4: 348528
+querytime = 90.11
+Outfile address:results/soc-LiveJournal1/1e-06/348528.txt
+5: 347490
+querytime = 90.6
+Outfile address:results/soc-LiveJournal1/1e-06/347490.txt
+6: 344521
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/344521.txt
+7: 348466
+querytime = 90.63
+Outfile address:results/soc-LiveJournal1/1e-06/348466.txt
+8: 337515
+querytime = 90.07
+Outfile address:results/soc-LiveJournal1/1e-06/337515.txt
+9: 347334
+querytime = 90.04
+Outfile address:results/soc-LiveJournal1/1e-06/347334.txt
+10: 337828
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/337828.txt
+11: 334429
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/334429.txt
+12: 347875
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/347875.txt
+13: 345814
+querytime = 90.07
+Outfile address:results/soc-LiveJournal1/1e-06/345814.txt
+14: 347871
+querytime = 90
+Outfile address:results/soc-LiveJournal1/1e-06/347871.txt
+15: 347493
+querytime = 90.08
+Outfile address:results/soc-LiveJournal1/1e-06/347493.txt
+16: 347594
+querytime = 90.01
+Outfile address:results/soc-LiveJournal1/1e-06/347594.txt
+17: 347040
+querytime = 90.1
+Outfile address:results/soc-LiveJournal1/1e-06/347040.txt
+18: 334280
+querytime = 90.13
+Outfile address:results/soc-LiveJournal1/1e-06/334280.txt
+19: 337514
+querytime = 90.08
+Outfile address:results/soc-LiveJournal1/1e-06/337514.txt
+20: 346820
+querytime = 90.13
+Outfile address:results/soc-LiveJournal1/1e-06/346820.txt
+21: 334974
+querytime = 90.61
+Outfile address:results/soc-LiveJournal1/1e-06/334974.txt
+22: 347527
+querytime = 90.09
+Outfile address:results/soc-LiveJournal1/1e-06/347527.txt
+23: 344783
+querytime = 90.01
+Outfile address:results/soc-LiveJournal1/1e-06/344783.txt
+24: 337856
+querytime = 90.08
+Outfile address:results/soc-LiveJournal1/1e-06/337856.txt
+25: 348290
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/348290.txt
+26: 341120
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/341120.txt
+27: 341162
+querytime = 90.1
+Outfile address:results/soc-LiveJournal1/1e-06/341162.txt
+28: 348293
+querytime = 90
+Outfile address:results/soc-LiveJournal1/1e-06/348293.txt
+29: 346592
+querytime = 90.07
+Outfile address:results/soc-LiveJournal1/1e-06/346592.txt
+30: 344461
+querytime = 90.06
+Outfile address:results/soc-LiveJournal1/1e-06/344461.txt
+31: 346821
+querytime = 90.18
+Outfile address:results/soc-LiveJournal1/1e-06/346821.txt
+32: 346822
+querytime = 89.81
+Outfile address:results/soc-LiveJournal1/1e-06/346822.txt
+33: 347142
+querytime = 88.65
+Outfile address:results/soc-LiveJournal1/1e-06/347142.txt
+34: 347969
+querytime = 87.42
+Outfile address:results/soc-LiveJournal1/1e-06/347969.txt
+35: 346106
+querytime = 97.65
+Outfile address:results/soc-LiveJournal1/1e-06/346106.txt
+36: 334641
+querytime = 99.04
+Outfile address:results/soc-LiveJournal1/1e-06/334641.txt
+37: 344645
+querytime = 91.49
+Outfile address:results/soc-LiveJournal1/1e-06/344645.txt
+38: 347152
+querytime = 95.6
+Outfile address:results/soc-LiveJournal1/1e-06/347152.txt
+39: 348428
+querytime = 89.39
+Outfile address:results/soc-LiveJournal1/1e-06/348428.txt
+40: 347442
+querytime = 86.22
+Outfile address:results/soc-LiveJournal1/1e-06/347442.txt
+41: 348438
+querytime = 96.12
+Outfile address:results/soc-LiveJournal1/1e-06/348438.txt
+42: 333670
+querytime = 86.61
+Outfile address:results/soc-LiveJournal1/1e-06/333670.txt
+43: 347820
+querytime = 86.53
+Outfile address:results/soc-LiveJournal1/1e-06/347820.txt
+44: 347324
+querytime = 86.55
+Outfile address:results/soc-LiveJournal1/1e-06/347324.txt
+45: 341958
+querytime = 86.52
+Outfile address:results/soc-LiveJournal1/1e-06/341958.txt
+46: 347810
+querytime = 86.6
+Outfile address:results/soc-LiveJournal1/1e-06/347810.txt
+47: 345264
+querytime = 86.77
+Outfile address:results/soc-LiveJournal1/1e-06/345264.txt
+48: 345265
+querytime = 86.59
+Outfile address:results/soc-LiveJournal1/1e-06/345265.txt
+49: 348314
+querytime = 87.89
+Outfile address:results/soc-LiveJournal1/1e-06/348314.txt
+50: 333004
+querytime = 86.53
+Outfile address:results/soc-LiveJournal1/1e-06/333004.txt
+51: 348536
+querytime = 86.38
+Outfile address:results/soc-LiveJournal1/1e-06/348536.txt
+52: 347803
+querytime = 86.43
+Outfile address:results/soc-LiveJournal1/1e-06/347803.txt
+53: 344198
+querytime = 86.63
+Outfile address:results/soc-LiveJournal1/1e-06/344198.txt
+54: 344182
+querytime = 86.66
+Outfile address:results/soc-LiveJournal1/1e-06/344182.txt
+55: 333003
+querytime = 86.53
+Outfile address:results/soc-LiveJournal1/1e-06/333003.txt
+56: 346390
+querytime = 87.06
+Outfile address:results/soc-LiveJournal1/1e-06/346390.txt
+57: 348420
+querytime = 86.63
+Outfile address:results/soc-LiveJournal1/1e-06/348420.txt
+58: 346868
+querytime = 86.69
+Outfile address:results/soc-LiveJournal1/1e-06/346868.txt
+59: 345153
+querytime = 86.97
+Outfile address:results/soc-LiveJournal1/1e-06/345153.txt
+60: 348531
+querytime = 86.53
+Outfile address:results/soc-LiveJournal1/1e-06/348531.txt
+61: 334128
+querytime = 86.63
+Outfile address:results/soc-LiveJournal1/1e-06/334128.txt
+62: 347036
+querytime = 87.3
+Outfile address:results/soc-LiveJournal1/1e-06/347036.txt
+63: 346849
+querytime = 86.49
+Outfile address:results/soc-LiveJournal1/1e-06/346849.txt
+64: 341577
+querytime = 86.45
+Outfile address:results/soc-LiveJournal1/1e-06/341577.txt
+65: 341628
+querytime = 86.56
+Outfile address:results/soc-LiveJournal1/1e-06/341628.txt
+66: 347601
+querytime = 86.58
+Outfile address:results/soc-LiveJournal1/1e-06/347601.txt
+67: 347680
+querytime = 86.87
+Outfile address:results/soc-LiveJournal1/1e-06/347680.txt
+68: 347968
+querytime = 86.66
+Outfile address:results/soc-LiveJournal1/1e-06/347968.txt
+69: 346869
+querytime = 86.65
+Outfile address:results/soc-LiveJournal1/1e-06/346869.txt
+70: 347860
+querytime = 86.68
+Outfile address:results/soc-LiveJournal1/1e-06/347860.txt
+71: 348311
+querytime = 87.16
+Outfile address:results/soc-LiveJournal1/1e-06/348311.txt
+72: 348638
+querytime = 86.79
+Outfile address:results/soc-LiveJournal1/1e-06/348638.txt
+73: 348447
+querytime = 86.73
+Outfile address:results/soc-LiveJournal1/1e-06/348447.txt
+74: 337230
+querytime = 86.61
+Outfile address:results/soc-LiveJournal1/1e-06/337230.txt
+75: 347183
+querytime = 86.76
+Outfile address:results/soc-LiveJournal1/1e-06/347183.txt
+76: 347846
+querytime = 86.52
+Outfile address:results/soc-LiveJournal1/1e-06/347846.txt
+77: 340088
+querytime = 86.77
+Outfile address:results/soc-LiveJournal1/1e-06/340088.txt
+78: 339670
+querytime = 87.13
+Outfile address:results/soc-LiveJournal1/1e-06/339670.txt
+79: 348025
+querytime = 86.37
+Outfile address:results/soc-LiveJournal1/1e-06/348025.txt
+80: 346198
+querytime = 86.24
+Outfile address:results/soc-LiveJournal1/1e-06/346198.txt
+81: 339778
+querytime = 86.31
+Outfile address:results/soc-LiveJournal1/1e-06/339778.txt
+82: 346192
+querytime = 87.06
+Outfile address:results/soc-LiveJournal1/1e-06/346192.txt
+83: 346190
+querytime = 88.11
+Outfile address:results/soc-LiveJournal1/1e-06/346190.txt
+84: 339873
+querytime = 87.92
+Outfile address:results/soc-LiveJournal1/1e-06/339873.txt
+85: 347908
+querytime = 88.39
+Outfile address:results/soc-LiveJournal1/1e-06/347908.txt
+86: 347476
+querytime = 86.57
+Outfile address:results/soc-LiveJournal1/1e-06/347476.txt
+87: 345652
+querytime = 86.77
+Outfile address:results/soc-LiveJournal1/1e-06/345652.txt
+88: 348713
+querytime = 86.94
+Outfile address:results/soc-LiveJournal1/1e-06/348713.txt
+89: 340090
+querytime = 86.59
+Outfile address:results/soc-LiveJournal1/1e-06/340090.txt
+90: 348696
+querytime = 86.71
+Outfile address:results/soc-LiveJournal1/1e-06/348696.txt
+91: 347952
+querytime = 86.73
+Outfile address:results/soc-LiveJournal1/1e-06/347952.txt
+92: 338231
+querytime = 86.87
+Outfile address:results/soc-LiveJournal1/1e-06/338231.txt
+93: 348715
+querytime = 86.66
+Outfile address:results/soc-LiveJournal1/1e-06/348715.txt
+94: 338224
+querytime = 86.85
+Outfile address:results/soc-LiveJournal1/1e-06/338224.txt
+95: 344866
+querytime = 86.59
+Outfile address:results/soc-LiveJournal1/1e-06/344866.txt
+96: 348266
+querytime = 86.68
+Outfile address:results/soc-LiveJournal1/1e-06/348266.txt
+97: 346536
+querytime = 86.85
+Outfile address:results/soc-LiveJournal1/1e-06/346536.txt
+98: 339038
+querytime = 86.99
+Outfile address:results/soc-LiveJournal1/1e-06/339038.txt
+99: 347579
+querytime = 86.69
+Outfile address:results/soc-LiveJournal1/1e-06/347579.txt
+
+====ExactSim done!====
+
+Average Query Time: 88.3908 s
+

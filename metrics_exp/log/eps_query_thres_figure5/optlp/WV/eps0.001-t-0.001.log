@@ -1,0 +1,15 @@
+Wed Mar 22 01:55:55 2023
+
+filename = WV, eps = 0.001
+idx_path = ../ground_idx/WV/idx1
+ground_idx.size = 7115
+gtnum = 889871
+anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/WV.ans_eps0.001000
+mynum = 816288
+ground truth pairs num = 889871
+my pairs num = 816288
+match pairs num = 816288
+precision = 1
+recall = 0.91731
+f1 score = 0.956872
+avg_error = 0.000214885

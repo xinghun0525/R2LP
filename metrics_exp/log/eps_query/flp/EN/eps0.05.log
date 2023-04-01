@@ -1,0 +1,15 @@
+Tue Feb 21 18:05:25 2023
+
+filename = EN, eps = 0.05
+idx_path = ../ground_idx/EN/idx1
+ground_idx.size = 36692
+gtnum = 22474163
+anspath = ../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/EN.ans_eps0.050000
+mynum = 8049812
+ground truth pairs num = 22474163
+my pairs num = 4025100
+match pairs num = 4025100
+precision = 1
+recall = 0.179099
+f1 score = 0.30379
+avg_error = 0.00369086

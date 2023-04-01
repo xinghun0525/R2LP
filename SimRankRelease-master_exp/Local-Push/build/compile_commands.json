@@ -1,0 +1,107 @@
+[
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/playground/main_exec_reduced_local_push.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/main_exec_reduced_local_push.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/main_exec_reduced_local_push.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/util/stat.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/util/graph_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/util/log.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/yche_refactor/simrank.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/yche_refactor/local_push_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -DFLP=1 -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/flp.dir/yche_refactor/local_push_yche_rlp.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/playground/compute_simrank.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/compute_simrank.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/compute_simrank.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/util/stat.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/util/graph_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/util/log.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/yche_refactor/simrank.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/yche_refactor/local_push_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/get_gtsim.dir/yche_refactor/local_push_yche_rlp.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/playground/main_exec_reduced_local_push.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/main_exec_reduced_local_push.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/playground/main_exec_reduced_local_push.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/util/stat.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/stat.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/util/graph_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/graph_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/util/log.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/util/log.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/yche_refactor/simrank.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/simrank.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/yche_refactor/local_push_yche.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche.cpp"
+},
+{
+  "directory": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/build",
+  "command": "/usr/bin/c++  -DDATA_ROOT=\\\"../../dataset\\\" -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsehash-yche/include -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/sparsepp -I/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/../dependencies/include    -O3 -g -march=native -std=gnu++11 -o CMakeFiles/rlp.dir/yche_refactor/local_push_yche_rlp.cpp.o -c /data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp",
+  "file": "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/yche_refactor/local_push_yche_rlp.cpp"
+}
+]

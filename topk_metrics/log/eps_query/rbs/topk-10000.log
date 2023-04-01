@@ -1,0 +1,5 @@
+Sun Mar 12 17:39:54 2023
+
+filename = CG, topk = 10000
+idx_path = ../ground_idx/CG/idx1
+ground_idx.size = 5242

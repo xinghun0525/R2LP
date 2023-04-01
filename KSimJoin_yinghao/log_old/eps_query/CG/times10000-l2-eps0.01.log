@@ -1,0 +1,17 @@
+filepath: /data/geQian/packing_gq/dataset/CG.txt, max_length: 2, times: 10000, eps: 0.01
+Vertice num = 5242
+Edge num = 28969
+loading graph takes 0.01 s.
+sort_node start ! 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+sort node finished 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+正在Init_NP
+Init_NP finished. cost 0.12 s, NP_l size is 3
+开始计算SimRank
+compute IncrementalSimRank(R, 1), get_second_possibility() already cost 0 s
+compute IncrementalSimRank(R, 2), get_second_possibility() already cost 0 s
+Compute SimRank finished. total cost 5.81 s
+get_second_possibility() total cost 1.51 s
+开始保存结果,./result/CG/times10000_length2.txt
+Compute finish

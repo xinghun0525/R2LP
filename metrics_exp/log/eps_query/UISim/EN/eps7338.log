@@ -1,0 +1,16 @@
+Fri Feb 17 18:40:24 2023
+
+filename = EN, eps = 7338
+idx_path = ../ground_idx/EN/idx1
+ground_idx.size = 36692
+gtnum = 22474163
+anspath = ../UISim_yinghao/result/EN/Hubs7338
+22858.650000s
+mynum = 14988305
+ground truth pairs num = 22474163
+my pairs num = 14988305
+match pairs num = 14988299
+precision = 1
+recall = 0.666912
+f1 score = 0.800177
+avg_error = 0.00873356
