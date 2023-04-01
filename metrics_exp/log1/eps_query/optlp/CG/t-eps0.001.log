@@ -1,7 +1,0 @@
-Mon Feb 20 11:15:42 2023
-
-filename = CG, eps = 0.001
-idx_path = ../ground_idx/CG/idx1
-ground_idx.size = 5242
-gtnum = 392573
-anspath = ../SimRankRelease-master_exp/Local-Push/eps_result/CG.ans_eps0.001000
