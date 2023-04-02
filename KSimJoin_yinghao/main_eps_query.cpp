@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include <iostream>
-#include "KSimJoin.h"
+#include "KSimJoin_eps.h"
 
 using namespace std;
 using namespace tsl;
@@ -12,9 +12,9 @@ int main(int argc, char** argv){
 	
 	time_t now = time(nullptr);   
 	char* curr_time = ctime(&now); cout << curr_time <<endl;
-	int topk = 500;  // 结果全输出，所以没用
-	// int topk = 5;
-	string filepath = "/data/geQian/packing_gq/dataset/" + filename + ".txt";
+	int topk = 500;
+	
+	string filepath = "/dataset/" + filename + ".txt";
 	
 
 	cout << "filepath: " << filepath << ", max_length: " << max_length << ", times: " << times << ", eps: " << eps << endl;
@@ -24,7 +24,7 @@ int main(int argc, char** argv){
 	
 
 	string respath = "./result/"+filename+"/times"+to_string(times)+"_length" + to_string(max_length) + ".txt";
-	cout << "开始保存结果," << respath << endl;
+	cout << respath << endl;
 	ofstream fout;
 	fout.open(respath);
 	while (!K.empty())
