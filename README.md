@@ -10,6 +10,8 @@
 
 `SimRankRelease-master_exp` codes modified from https://github.com/KeithYue/SimRankRelease
 
+`UISim202-main` codes modified from https://github.com/UISim2020/UISim2020
+
 `threshold_metrics` check accuracy of threshold query
 
 `topk_metrics` check accuracy of topk query
