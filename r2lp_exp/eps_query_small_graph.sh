@@ -1,7 +1,8 @@
 # threshold="0.1"
 cd code
 make main_eps_small_graph
-fn=("CG" "WV" "EN" "SD")
+fn=("CG")
+#  "WV" "EN" "SD")
 # fn=("WF")
 eps=("0.1" "0.01" "0.001")
 #  "0.95" "0.99")

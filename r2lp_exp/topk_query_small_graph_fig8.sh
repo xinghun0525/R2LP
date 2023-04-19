@@ -2,8 +2,9 @@
 cd code
 rm main_thres_small_graph_fig8
 make main_thres_small_graph_fig8
-# fn=("CG" "WV" "EN" "SD" "DB" 
-fn=("WF" "ND")
+fn=("CG")
+#  "WV" "EN" "SD" "DB" 
+# fn=("WF" "ND")
 # fn=("EN")
 # thres=("0.05")
 topk=("5000")
