@@ -15,3 +15,5 @@
 `threshold_metrics` check accuracy of threshold query
 
 `topk_metrics` check accuracy of topk query
+
+`gperftools` is needed when facing the rlp/flp, you may reference on https://github.com/KeithYue/SimRankRelease
