@@ -1,5 +1,5 @@
-#ifndef RBS_THRESHOLD_H
-#define RBS_THRESHOLD_H
+#ifndef RBS_THRESHOLD_FIG8_SMALL_H
+#define RBS_THRESHOLD_FIG8_SMALL_H
 #include <bits/stdc++.h>
 
 #include "Graph.h"

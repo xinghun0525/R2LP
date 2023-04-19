@@ -1,5 +1,5 @@
-#ifndef R2LP_THRESHOLD_H
-#define R2LP_THRESHOLD_H
+#ifndef RBS_THRESHOLD_FIG8_LARGE_H
+#define RBS_THRESHOLD_FIG8_LARGE_H
 #include <bits/stdc++.h>
 
 #include "Graph.h"
@@ -42,7 +42,7 @@ bool max_comp_Sim_pair(const Sim_pair & sp1, const Sim_pair & sp2){
 	return sp1.sim > sp2.sim;
 }
 
-class R2LP{
+class Rbs{
 public:
     Graph g;
     int vert_num;
@@ -72,7 +72,7 @@ public:
     robin_set<int> nodesetb;
     int topk = 1000;
     string file_name;
-    R2LP(string _file_name, string path_name, int _topk, double _rou, double _eps_init = 0.1, double _eps_term=0.002,
+    Rbs(string _file_name, string path_name, int _topk, double _rou, double _eps_init = 0.1, double _eps_term=0.002,
         double _c = 0.6, double _time_per_turn_upper_bound = 3600, double _full_time_upper_bound = 10000){
         file_name = _file_name;
         rou = _rou;
@@ -195,11 +195,11 @@ public:
         return;
     }
 
-    void r2lppush_idx(){
+    void rbspush_idx(){
         Timer fulltimer;
         ppr.clear();
         fulltimer.start();
-        cout << "r2lppush start" << endl;
+        cout << "rbspush start" << endl;
 
         robin_map<int, robin_map<int, double> > appr;
         robin_map<int, robin_map<int, double> > bppr;

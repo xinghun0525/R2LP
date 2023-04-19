@@ -66,14 +66,14 @@ int main(int argc, char **argv){
 	Timer mytime;
 	double eps_init = 0.6;
 	double eps_term = 1e-4;
-    R2LP myrbs = R2LP(filename, dataname, topk, rou, eps_init, eps_term);
+    Rbs myrbs = Rbs(filename, dataname, topk, rou, eps_init, eps_term);
 
 	myrbs.get_ground_truth(filename, topk);
 	cout << "rbspush start" << endl;
 	double all_time = 0;
 
 	mytime.start();
-	myrbs.r2lppush_idx();
+	myrbs.rbspush_idx();
 	mytime.end();
 
 	cout << endl << endl << "rbspush finish, use time = " << mytime.timeCost << endl;
