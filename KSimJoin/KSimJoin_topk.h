@@ -1,4 +1,4 @@
-#ifndef KSIMJOIN_TOPK_H
+#ifndef KSIMJOIN_H
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -33,21 +33,20 @@ public:
 	double cvalue;
 	double sqrtc;
 	double eps;  
-	vector<robin_map<int, robin_map<int, double>>> NP_l;				// l-<v, x, pv> v->x
-	vector<robin_map<int, robin_map<int, double>>> RNP_l;				// l-<x, u, pu> u->x
-	// vector<robin_map<int, robin_map<int, int>>> VsMap;					// l-<v, x, Vs> super node Vs
-	vector<vector<pair<int,int>>> VsMap;  // l-[[u1,x1],[u2,x2]]
-	vector<robin_map<int, robin_map<int, robin_map<int, double>>>> M_l; // l-<u, v, x, px> u->x = l, v->x = l
-	// vector<robin_map<int, robin_map<int, double>>> UB_p; // upper bound prob. l-<u, x, px>
-	vector<robin_map<int, double>> second_prob;							// l-<u, second_prob>
+	vector<robin_map<int, robin_map<int, double>>> NP_l;
+	vector<robin_map<int, robin_map<int, double>>> RNP_l;
+	vector<robin_map<int, pair<int,int>>> VsMap;
+	vector<robin_map<int, robin_map<int, robin_map<int, double>>>> M_l;
+	vector<robin_map<int, double>> second_prob;
 	robin_map<int, robin_map<int, double>> Sim;
-	priority_queue<Sim_pair> K; 
-	
+	priority_queue<Sim_pair> K;
+	robin_map<int, vector<double>> Ui_map;
 	Random mR;
 	int maxlength = 3;
 	int topk = 10000;
 	int times = 1000;
-	double sec_p_cost = 0.0; 
+	double sec_p_cost = 0.0;
+	double incre_cost = 0.0;
 
 	Ksimjoin(string file_name, int _maxlength = 3, int _topk = 10000, int _times=1000, double _eps = 0.01, double _c = 0.6)
 	{
@@ -70,7 +69,6 @@ public:
 
 	double get_second_possibility(int a, int l)
 	{
-		// (a,a) -> singleton node pair with exact l length.
 		if (second_prob[l].find(a) != second_prob[l].end())
 			return second_prob[l][a];
 
@@ -96,7 +94,6 @@ public:
 				if (ta == tb)
 				{
 					++meet_times[tmp_l];
-					// ++meet_times;
 					break;
 				}
 			}
@@ -104,21 +101,19 @@ public:
 		for(int i = 0; i < maxlength; ++i){
 			second_prob[i][a] = meet_times[i]/(times+0.0);
 		}
-		// double prob = meet_times / (times + 0.0);
-		// second_prob[l][a] = prob;
+
 		double prob = second_prob[l][a];
 		sec_p_cost += (clock()-t1)/(double)CLOCKS_PER_SEC;
-		// cout << "compute_use time = "
+
 		return prob;
 	}
 
 	void IncrementalSimRank(robin_set<int> &R, int l)
 	{
+		clock_t t1=clock();
 		while (!K.empty()) K.pop();
-		// robin_map<int, robin_map<int, double> > S_wave;
 
 		robin_map<int, robin_set<int>> Pi_l;
-		// Pi_l[v] = {u} exists 2-way paths start from u & v meet at l hops
 
 		assert(NP_l.size() >= l);
 		for (const auto &v : R)
@@ -133,6 +128,7 @@ public:
 					double pu = rnpi.second;
 					double px = pv * pu;
 					Pi_l[v].insert(u);
+
 					Sim[u][v] += px;
 					M_l[l][v][u][x] = px;
 				}
@@ -155,11 +151,15 @@ public:
 				while (K.size() > topk) K.pop();
 			}
 		}
+		incre_cost += (clock()-t1)/(double)CLOCKS_PER_SEC;
 		return;
 	}
 
 	void Init_NP(int max_l)
 	{
+		robin_map<int, pair<int,int>> VsItem0;
+		VsMap.emplace_back(VsItem0);
+
 		robin_map<int, robin_map<int, double>> NP0;
 		for (int i = 0; i < vert_num; ++i)
 		{
@@ -169,6 +169,7 @@ public:
 		RNP_l.push_back(NP0);
 		for (int tl = 1; tl <= max_l; ++tl)
 		{
+			robin_map<int, pair<int,int>> tmpVsItem;
 			robin_map<int, robin_map<int, double>> &lstNP = NP_l[tl - 1];
 			robin_map<int, robin_map<int, double>> &lstRNP = RNP_l[tl - 1];
 			robin_map<int, robin_map<int, double>> tmpNP;
@@ -197,64 +198,33 @@ public:
 				for (const auto &j : i.second)
 				{
 					tmpRNP[j.first][v] = j.second;
+
+					if(tmpVsItem.count(j.first)){
+						int Vs1 = tmpVsItem[j.first].first, Vs2 = tmpVsItem[j.first].second;
+						if(j.second >= tmpRNP[j.first][Vs1]){
+							tmpVsItem[j.first].first = v;
+							tmpVsItem[j.first].second = Vs1;
+						}
+						else if(j.second >= tmpRNP[j.first][Vs2]){
+							tmpVsItem[j.first].second = v;
+						}
+					}
+					else{
+						tmpVsItem[j.first] = pair<int,int>(v, v);
+					}
 				}
 			}
 			RNP_l.push_back(tmpRNP);
+			VsMap.emplace_back(tmpVsItem);
 		}
-	}
-
-	void Cre_VsMap()
-	{  
-		vector<pair<int,int>> VsMap_itemi(2, pair<int,int>(-1,-1));
-		VsMap.emplace_back(VsMap_itemi);
-		
-		for (int i = 1; i <= maxlength; i++){
-			VsMap_itemi.clear();
-			for (const auto &npi : NP_l[i]){
-				int u = npi.first;
-				for(const auto &npu_x : npi.second){
-					int x = npu_x.first;
-					double u2xp = npu_x.second;
-					if(VsMap_itemi.size()==0) VsMap_itemi.emplace_back(pair<int,int>(u,x));
-					else if(VsMap_itemi.size()==1){
-						if(VsMap_itemi[0].first == u){  
-							if(NP_l[i][VsMap_itemi[0].first][VsMap_itemi[0].second] < u2xp){
-								VsMap_itemi[0] = pair<int,int>(u,x);
-							}
-						}
-						else{ 
-							VsMap_itemi.emplace_back(pair<int,int>(u,x));
-						}
-					}
-					else if(VsMap_itemi.size()==2){
-						if(VsMap_itemi[0].first == u){
-							if(NP_l[i][VsMap_itemi[0].first][VsMap_itemi[0].second] < u2xp){
-								VsMap_itemi[0] = pair<int,int>(u,x);
-							}
-						}
-						else if(VsMap_itemi[1].first == u){
-							if(NP_l[i][VsMap_itemi[1].first][VsMap_itemi[1].second] < u2xp){
-								VsMap_itemi[1] = pair<int,int>(u,x);
-							}
-						}
-						else{
-							if(NP_l[i][VsMap_itemi[0].first][VsMap_itemi[0].second] < u2xp){
-								VsMap_itemi[1] = VsMap_itemi[0];
-								VsMap_itemi[0] = pair<int,int>(u,x);
-							}
-							else if(NP_l[i][VsMap_itemi[1].first][VsMap_itemi[1].second] < u2xp) VsMap_itemi[1] = pair<int,int>(u,x);
-						}
-					}
-				}
-			}
-			VsMap.emplace_back(VsMap_itemi);
-		}
-
 	}
 
 	double UpperBound(int v, int l)
-	{  // v->x, v->Vs
-		vector<double> Ui_list(maxlength+1, 0.0);
+	{
+		if(!Ui_map.count(v)){
+			vector<double> Ui_list(maxlength+1, 0.0);
+			Ui_map[v] = Ui_list;
+		}
 
 		double U = 0;
 		if (l == 1)
@@ -262,44 +232,49 @@ public:
 			for (int i = 1; i <= maxlength; ++i)
 			{
 				double Ui = 0;
-
-				int Vs_from, Vs_to;
-				if(VsMap[i][0].first != v){
-					Vs_from = VsMap[i][0].first;
-					Vs_to = VsMap[i][0].second;
-				}else{
-					Vs_from = VsMap[i][1].first;
-					Vs_to = VsMap[i][1].second;
-				}
 				
 				for (const auto &xp : NP_l[i][v])
 				{
 					int x = xp.first;
+					int Vs1 = VsMap[i][x].first;
+					if(Vs1 == v) Vs1 = VsMap[i][x].second;
+					if(Vs1 == v){
+						continue;
+					}
+					
 					double P = xp.second;
-					double PVs = NP_l[i][Vs_from][Vs_to];
+					double PVs = RNP_l[i][x][Vs1];
 					double Px = P * PVs;
 
-					M_l[i][v][Vs_from][x] = Px;
+					M_l[i][v][Vs1][x] = Px;
 					Ui += Px;
 				}
-				Ui_list[i] = Ui;
+				Ui_map[v][i] = Ui;
 			}
 		}
 		else
 		{
 			for(int i = l; i <= maxlength; i++){
-				int Vs_from = VsMap[i-(l-1)][0].first != v?Vs_from = VsMap[i-(l-1)][0].first:Vs_from = VsMap[i-(l-1)][1].first;
-				
-				for(const auto &vm : M_l[i][v][Vs_from]){
-					int x = vm.first;
-					double P = vm.second;
+				int newi = i-(l-1);
+				for (const auto &xp : NP_l[newi][v]){
+					int x = xp.first;
+					int Vs1 = VsMap[newi][x].first;
+					if(Vs1 == v){
+						Vs1 = VsMap[newi][x].second;
+					}
+					if(Vs1 == v){
+						continue;
+					}
+					double P = M_l[newi][v][Vs1][x];
 					double sec_prob = get_second_possibility(x, l-1);
 					double Py = P * sec_prob;
-					Ui_list[i] -= Py;
+					Ui_map[v][i] -= Py;
 				}
 			}
 		}
-		for(int i = 1; i <= maxlength; i++) U += Ui_list[i];
+
+		for(int i = 1; i <= maxlength; i++) U += Ui_map[v][i];
+		
 		return U;
 	}
 
@@ -310,50 +285,47 @@ public:
 		Init_NP(max_length);
 		cout << "Init_NP finished. cost " << (clock()-t1)/(double)CLOCKS_PER_SEC << " s, NP_l size is " << NP_l.size() << endl;
 
-		clock_t t2=clock();
-		Cre_VsMap();
-		cout << (clock()-t2)/(double)CLOCKS_PER_SEC <<"s\n" << endl;
 		int l = 1;
-
 		robin_set<int> R;
 		for (int i = 0; i < vert_num; i++)
 			R.insert(i);
 
 		while (l < max_length)
 		{
-			
 			IncrementalSimRank(R, l);
-			cout << "compute IncrementalSimRank(R, " << l << "), get_second_possibility() already cost " << sec_p_cost << " s" << endl;
 
 			Sim_pair sigma = K.top();
-			cout << "sigma is (" << sigma.a << ", " << sigma.b << ", " << sigma.sim << ")" << endl;
+
+			double U_min = 100.0, U_max = -100.0;
 			robin_set<int> newR;
+
+			clock_t uclock = clock();
 			for (const auto &v : R)
 			{
 				double U = UpperBound(v, l);
+
 				if (U >= sigma.sim)
 				{
 					newR.insert(v);
 				}
+				U_min = min(U_min, U);
+				U_max = max(U_max, U);
 			}
 			++l;
 			R = newR;
-			cout << "R size is " << R.size() << endl;
 		}
 		IncrementalSimRank(R, l);
-		cout << "Compute SimRank finished. total cost " << (clock()-t1)/(double)CLOCKS_PER_SEC << " s。";
+		cout << "\nIncrementalSimRank(R, " << l << ") already cost " << incre_cost <<"s, get_second_possibility() already cost " << sec_p_cost << " s" << endl;
+		cout << "Compute SimRank finished. total cost " << (clock()-t1)/(double)CLOCKS_PER_SEC << " s. ";
 		cout << "get_second_possibility() total cost " << sec_p_cost << " s" << endl;
 
 
-		// 使用优先队列K来保存最终的结果，并返回
 		for(const auto & si : Sim){
 			int u = si.first;
 			for(const auto & v_sim : si.second){
 				int v = v_sim.first;
-
 				if(v >= u) continue;
 				double sim = v_sim.second;
-
 				if(sim < 9e-4) continue;
 				else if(sim >=1) continue;
 
