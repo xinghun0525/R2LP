@@ -1,0 +1,24 @@
+从UISim中新建release文件夹
+
+edit src/config
+make
+cd release
+./SelectHubs hubtype
+
+eg:
+./SelectHubs indeg
+./Online hubtype HubNum depth stopRea eta
+eg:
+./Online indeg 5000000 5 0.0001 0
+
+
+
+(all-pair)
+./Online_ap indeg 5000 5 0.00001 2 3000
+
+数据处理在D:\Python_Projects\处理wiki-Vote 目录下
+例子：(wiki顶点数：7115, HubNum:71、711、3557)(dblp顶点数：5425963, )
+make
+cd release
+./SelectHubs indeg
+./Online indeg 2000 5 0.0001 2
