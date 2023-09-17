@@ -1,0 +1,68 @@
+Sun Sep 17 11:15:26 2023
+
+CG , eps = 0.005
+dataname = ../../dataset/CG.txt
+Vertice num = 5242
+Edge num = 28969
+loading graph takes 0.002224 s.
+sort_node start ! 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+sort node finished 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+n = 5242, m = 28969
+rlp start
+rbspush start
+pushsize = 76619
+norandom num = 229882
+inital finished , use time = 0.011171
+L = 10
+pushsize = 76619
+**** 0 **** pushnum = 4635
+clear hash map use time = 0
+norandom num = 470412
+cycle finished 
+cycle use time = 0.060664, ppr inc use time = 0.018479, all use time = 0.079192
+pushsize = 353299
+**** 1 **** pushnum = 4609
+clear hash map use time = 0.000432
+norandom num = 134730
+cycle finished 
+cycle use time = 0.022649, ppr inc use time = 0.004541, all use time = 0.027676
+pushsize = 124220
+**** 2 **** pushnum = 4601
+clear hash map use time = 0.000486
+norandom num = 29998
+cycle finished 
+cycle use time = 0.006368, ppr inc use time = 0.001269, all use time = 0.008164
+pushsize = 27874
+**** 3 **** pushnum = 3704
+clear hash map use time = 0.000287
+norandom num = 6129
+cycle finished 
+cycle use time = 0.001352, ppr inc use time = 0.00021, all use time = 0.001884
+pushsize = 6803
+**** 4 **** pushnum = 1633
+clear hash map use time = 0.000137
+norandom num = 622
+cycle finished 
+cycle use time = 0.000267, ppr inc use time = 4e-05, all use time = 0.000475
+pushsize = 1262
+**** 5 **** pushnum = 505
+clear hash map use time = 6.8e-05
+norandom num = 3
+cycle finished 
+cycle use time = 3.7e-05, ppr inc use time = 1.9e-05, all use time = 0.00015
+pushsize = 49
+**** 6 **** pushnum = 18
+clear hash map use time = 3.2e-05
+norandom num = 0
+cycle finished 
+cycle use time = 2e-05, ppr inc use time = 1.7e-05, all use time = 9.3e-05
+pushsize = 0
+**** 7 **** pushnum = 0
+clear hash map use time = 1.8e-05
+allnorandom num = 871776
+rlp finish, use time = 0.128911
+use mem = 65824 KB
+outputfile = ../result_eps/CG/eps_0.005000
+finish writing!!

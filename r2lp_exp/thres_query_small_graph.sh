@@ -1,4 +1,3 @@
-# threshold="0.1"
 cd code
 rm main_thres_small_graph
 make main_thres_small_graph

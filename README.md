@@ -1,8 +1,14 @@
-# R2LP
+Code Contributors: Qian Ge, Yu Liu, Yinghao Zhao, Yuetian Sun
 
-`dataset` save the needed graph dataset
+If you have any questions, feel free to contact us. Our emails are: geqian@pku.edu.cn
 
-`r2lp_exp` data path for our proposed `R2LP`
+Plase cite our papers if you choose to use our code.
+
+> Qian Ge+, Yu Liu+*, Yinghao Zhao, Yuetian Sun, Lei Zou, Yuxing Chen, and Anqun Pan. Efficient and Accurate SimRank-based Similarity Joins: Experiments, Analysis, and Improvement. Accepted by VLDB 2024.
+
+`dataset` save the needed graph dataset, we store the three small dataset in this github link, and the other medieum and large datasets can be downloaded from https://drive.google.com/drive/folders/1u99TgRftbVKoZD04f7kI5exvKuBWZ8gM?usp=drive_link under the `dataset`. 
+
+`r2lp_exp` is the dataloader for our proposed algorithm `R2LP`.
 
 `ground_idx` the index node selected for medieum graph and large graph
 
@@ -10,7 +16,7 @@
 
 `SimRankRelease-master_exp` codes modified from https://github.com/KeithYue/SimRankRelease
 
-`UISim202-main` codes modified from https://github.com/UISim2020/UISim2020
+`UISim202-main` codes modified from https://github.com/UISim2020/UISim2020, 
 
 `threshold_metrics` check accuracy of threshold query
 

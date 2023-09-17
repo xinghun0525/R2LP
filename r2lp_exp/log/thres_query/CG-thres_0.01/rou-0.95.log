@@ -1,0 +1,140 @@
+Sun Sep 17 14:46:26 2023
+
+CG , threshold = 0.01, rou = 0.95, output_full = 0
+output_full = 0
+dataname = ../../dataset/CG.txt
+Vertice num = 5242
+Edge num = 28969
+loading graph takes 0.003305 s.
+sort_node start ! 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+sort node finished 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+n = 5242, m = 28969
+rbspush start
+rbspush start
+
+**** eps = 0.005
+pushsize = 76619
+norandom num = 229882
+inital finished , use time = 0.01369
+L = 10
+pushsize = 76619
+**** 0 **** pushnum = 4635
+clear hash map use time = 0
+norandom num = 470412
+cycle finished 
+cycle use time = 0.072846, ppr inc use time = 0.018795, all use time = 0.091702
+pushsize = 352161
+**** 1 **** pushnum = 4610
+clear hash map use time = 0.000436
+norandom num = 134632
+cycle finished 
+cycle use time = 0.023801, ppr inc use time = 0.004527, all use time = 0.028824
+pushsize = 124984
+**** 2 **** pushnum = 4602
+clear hash map use time = 0.000483
+norandom num = 29687
+cycle finished 
+cycle use time = 0.005802, ppr inc use time = 0.001235, all use time = 0.007561
+pushsize = 26518
+**** 3 **** pushnum = 3679
+clear hash map use time = 0.000281
+norandom num = 6288
+cycle finished 
+cycle use time = 0.001442, ppr inc use time = 0.000321, all use time = 0.00208
+pushsize = 6578
+**** 4 **** pushnum = 1614
+clear hash map use time = 0.00014
+norandom num = 625
+cycle finished 
+cycle use time = 0.000292, ppr inc use time = 4.1e-05, all use time = 0.000507
+pushsize = 1351
+**** 5 **** pushnum = 527
+clear hash map use time = 6.9e-05
+norandom num = 10
+cycle finished 
+cycle use time = 4.3e-05, ppr inc use time = 1.6e-05, all use time = 0.000154
+pushsize = 36
+**** 6 **** pushnum = 12
+clear hash map use time = 3.7e-05
+norandom num = 0
+cycle finished 
+cycle use time = 2e-05, ppr inc use time = 1.5e-05, all use time = 9.7e-05
+pushsize = 0
+**** 7 **** pushnum = 0
+clear hash map use time = 1.6e-05
+allnorandom num = 871536
+
+this turn finished , use time = 0.144748
+num of larger than threshold = 46244, num of candidate = 33347
+
+**** eps = 0.0025
+pushsize = 76619
+norandom num = 229882
+inital finished , use time = 0.010725
+L = 11
+pushsize = 76619
+**** 0 **** pushnum = 4635
+clear hash map use time = 9.9e-05
+norandom num = 1148823
+cycle finished 
+cycle use time = 0.130022, ppr inc use time = 0.030243, all use time = 0.160424
+pushsize = 580916
+**** 1 **** pushnum = 4609
+clear hash map use time = 0.000447
+norandom num = 384116
+cycle finished 
+cycle use time = 0.057846, ppr inc use time = 0.00865, all use time = 0.067006
+pushsize = 280858
+**** 2 **** pushnum = 4611
+clear hash map use time = 0.000536
+norandom num = 97947
+cycle finished 
+cycle use time = 0.022149, ppr inc use time = 0.004476, all use time = 0.027228
+pushsize = 87317
+**** 3 **** pushnum = 4538
+clear hash map use time = 0.000624
+norandom num = 28207
+cycle finished 
+cycle use time = 0.007501, ppr inc use time = 0.001472, all use time = 0.009648
+pushsize = 25761
+**** 4 **** pushnum = 3393
+clear hash map use time = 0.000308
+norandom num = 6216
+cycle finished 
+cycle use time = 0.00192, ppr inc use time = 0.000237, all use time = 0.00251
+pushsize = 7102
+**** 5 **** pushnum = 1513
+clear hash map use time = 0.000155
+norandom num = 662
+cycle finished 
+cycle use time = 0.000341, ppr inc use time = 5e-05, all use time = 0.000587
+pushsize = 1336
+**** 6 **** pushnum = 524
+clear hash map use time = 9e-05
+norandom num = 8
+cycle finished 
+cycle use time = 4.9e-05, ppr inc use time = 2.3e-05, all use time = 0.0002
+pushsize = 40
+**** 7 **** pushnum = 18
+clear hash map use time = 4.2e-05
+norandom num = 0
+cycle finished 
+cycle use time = 2.9e-05, ppr inc use time = 2.2e-05, all use time = 0.00013
+pushsize = 0
+**** 8 **** pushnum = 0
+clear hash map use time = 2.6e-05
+allnorandom num = 1895861
+
+this turn finished , use time = 0.278654
+num of larger than threshold = 53797, num of candidate = 17295
+
+**** eps = 0.00125
+pushsize = 76619
+norandom num = 229882
+inital finished , use time = 0.007116
+L = 13
+pushsize = 76619
+**** 0 **** pushnum = 4635
+clear hash map use time = 4.6e-05

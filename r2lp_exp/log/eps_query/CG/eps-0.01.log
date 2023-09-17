@@ -1,0 +1,62 @@
+Sun Sep 17 11:15:26 2023
+
+CG , eps = 0.01
+dataname = ../../dataset/CG.txt
+Vertice num = 5242
+Edge num = 28969
+loading graph takes 0.002199 s.
+sort_node start ! 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+sort node finished 
+7: 3 |2220: 3 |1448: 3 |8: 4 |0: 8 |1446: 9 |1081: 9 |1442: 9 |746: 23 |1088: 26 |
+n = 5242, m = 28969
+rlp start
+rbspush start
+pushsize = 76619
+norandom num = 229882
+inital finished , use time = 0.011008
+L = 9
+pushsize = 76619
+**** 0 **** pushnum = 4635
+clear hash map use time = 0
+norandom num = 178536
+cycle finished 
+cycle use time = 0.028352, ppr inc use time = 0.009095, all use time = 0.037498
+pushsize = 178492
+**** 1 **** pushnum = 4605
+clear hash map use time = 0.00043
+norandom num = 41785
+cycle finished 
+cycle use time = 0.007916, ppr inc use time = 0.00176, all use time = 0.010151
+pushsize = 46155
+**** 2 **** pushnum = 4282
+clear hash map use time = 0.000337
+norandom num = 7252
+cycle finished 
+cycle use time = 0.001552, ppr inc use time = 0.000227, all use time = 0.00215
+pushsize = 7187
+**** 3 **** pushnum = 1984
+clear hash map use time = 0.000157
+norandom num = 1358
+cycle finished 
+cycle use time = 0.000289, ppr inc use time = 4.1e-05, all use time = 0.00052
+pushsize = 1252
+**** 4 **** pushnum = 531
+clear hash map use time = 8.2e-05
+norandom num = 9
+cycle finished 
+cycle use time = 4e-05, ppr inc use time = 1.9e-05, all use time = 0.000167
+pushsize = 52
+**** 5 **** pushnum = 17
+clear hash map use time = 2.8e-05
+norandom num = 0
+cycle finished 
+cycle use time = 2e-05, ppr inc use time = 1.7e-05, all use time = 8.8e-05
+pushsize = 0
+**** 6 **** pushnum = 0
+clear hash map use time = 2.5e-05
+allnorandom num = 458822
+rlp finish, use time = 0.061676
+use mem = 39392 KB
+outputfile = ../result_eps/CG/eps_0.010000
+finish writing!!
