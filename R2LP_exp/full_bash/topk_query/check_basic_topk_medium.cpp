@@ -57,7 +57,7 @@ int main(int argc, char **argv) {
 	cout << "filename = " << filename << ", topk = " << topk << endl;
 	unordered_set<int> ground_idx;
 	ifstream fin;
-	string idx_path = "../ground_idx/" + filename + "/idx1";
+	string idx_path = "../../../ground_idx/" + filename + "/idx1";
 	cout << "idx_path = " << idx_path << endl;
 	fin.open(idx_path.data());
 	assert(fin.is_open());
