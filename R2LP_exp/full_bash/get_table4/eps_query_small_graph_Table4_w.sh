@@ -1,4 +1,4 @@
-cd code
+cd ../../code
 rm  main_eps_small_graph_w_pruning
 make main_eps_small_graph_w_pruning
 fn=("CG WV EN SD DB wiki_fy ND")

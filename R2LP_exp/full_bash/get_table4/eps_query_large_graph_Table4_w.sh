@@ -1,4 +1,4 @@
-cd code
+cd ../../code
 rm main_eps_large_graph_w_pruning
 make main_eps_large_graph_w_pruning
 fn=("CP LJ wiki_zh")
