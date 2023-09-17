@@ -57,7 +57,7 @@ int main(int argc, char **argv){
     cout << "filename = " << filename << ", topk = " << topk << endl;
 	unordered_set<int> ground_idx;
     ifstream fin;
-    string idx_path = "../ground_idx/" + filename + "/idx1";
+    string idx_path = "../../../ground_idx/" + filename + "/idx1";
 	cout << "idx_path = " << idx_path << endl;
     fin.open(idx_path.data());
     assert(fin.is_open());
@@ -71,7 +71,7 @@ int main(int argc, char **argv){
     unordered_map<int, unordered_map<int, double> > gt_sim;
 	
 
-    string groundtruth_path = "../SimRankRelease-master/Local-Push/ground_truth/" + filename;
+    string groundtruth_path = "../../../SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
 
 	string gtpath = groundtruth_path;
 	// cout << gtpath << endl;
@@ -122,9 +122,9 @@ int main(int argc, char **argv){
 
     string anspath;
     if(algo_name == "rbs")
-    	anspath = base_path + "../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
+    	anspath = base_path + "../../../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
     else if(algo_name == "optlp")
-        anspath = base_path + "../SimRankRelease-master/Local-Push/eps_result/" + filename + "_topk" + stopk;
+        anspath = base_path + "../../../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + "_topk" + stopk;
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;
 
