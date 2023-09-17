@@ -453,7 +453,7 @@ public:
             //     break;
             // }
 
-            if(check_finish_medieum(eps))
+            if(check_finish_medium(eps))
                 break;
             eps /= 2;
             if(eps<eps_term)
@@ -466,7 +466,7 @@ public:
         
     }
     
-    bool check_finish_medieum(double tmp_eps){
+    bool check_finish_medium(double tmp_eps){
         vector<Sim_pair> ve;
         ve.clear();
         cout << "file name = " << file_name << endl;
