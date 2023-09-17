@@ -1,8 +1,20 @@
 main_eps_small_graph: main_eps_small_graph.cpp SFMT.c
 	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_small_graph main_eps_small_graph.cpp SFMT.c -L/usr/local/lib/
 
+main_eps_small_graph_w_pruning: main_eps_small_graph_w_pruning.cpp SFMT.c
+	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_small_graph_w_pruning main_eps_small_graph_w_pruning.cpp SFMT.c -L/usr/local/lib/
+
+main_eps_small_graph_wo_pruning: main_eps_small_graph_wo_pruning.cpp SFMT.c
+	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_small_graph_wo_pruning main_eps_small_graph_wo_pruning.cpp SFMT.c -L/usr/local/lib/
+
 main_eps_large_graph: main_eps_large_graph.cpp SFMT.c
 	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_large_graph main_eps_large_graph.cpp SFMT.c -L/usr/local/lib/
+
+main_eps_large_graph_w_pruning: main_eps_large_graph_w_pruning.cpp SFMT.c
+	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_large_graph_w_pruning main_eps_large_graph_w_pruning.cpp SFMT.c -L/usr/local/lib/
+
+main_eps_large_graph_wo_pruning: main_eps_large_graph_wo_pruning.cpp SFMT.c
+	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_eps_large_graph_wo_pruning main_eps_large_graph_wo_pruning.cpp SFMT.c -L/usr/local/lib/
 
 getidx: getidx.cpp SFMT.c
 	g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o getidx getidx.cpp SFMT.c -L/usr/local/lib/ -ltcmalloc
