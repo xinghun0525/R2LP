@@ -116,9 +116,9 @@ int main(int argc, char **argv) {
 
 	string anspath;
 	if (algo_name == "rbs")
-		anspath = base_path + "../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
+		anspath = base_path + "../../../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
 	else if (algo_name == "optlp")
-		anspath = base_path + "../SimRankRelease-master/Local-Push/eps_result/" + filename + "_topk" + stopk;
+		anspath = base_path + "../../../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + "_topk" + stopk;
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;
 
