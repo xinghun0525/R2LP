@@ -20,3 +20,6 @@ Then, run the All-Pair algorithm
 ./Online_ap [hubType] [numHubs] [depth] [stopRea] [eta] [nodeFilepath] [edgeFilepath] [indexDirpath] [outputFilepath]
 ```
 
+# Plot Figure
+
+## 
