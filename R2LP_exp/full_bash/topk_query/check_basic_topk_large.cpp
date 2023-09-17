@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
 
 	set<int> nodeid_set;
 	long long gtnum = 0;
-	string groundtruth_path = "/data/geQian/packing_gq/ExactSim-master/results/" + filename + "/1e-06/";
+	string groundtruth_path = "../../../ExactSim-master/results/" + filename + "/1e-06/";
 	for (auto a : ground_idx) {
 		string gtpath = groundtruth_path + to_string(a) + ".txt";
 		fin.open(gtpath.data());
@@ -124,9 +124,9 @@ int main(int argc, char** argv) {
 
 	string anspath;
 	if (algo_name == "rbs")
-		anspath = base_path + "../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
+		anspath = base_path + "../../../rbs-sim_exp/result/" + filename + "/topk_" + stopk;
 	else if (algo_name == "optlp")
-		anspath = base_path + "../SimRankRelease-master/Local-Push/eps_result/" + filename + "_topk" + stopk;
+		anspath = base_path + "../../../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + "_topk" + stopk;
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;
 
