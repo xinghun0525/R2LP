@@ -11,8 +11,7 @@ eta="2"
 make
 cd release
 
-# To select the hubs node, you only need to run it once, and the results are saved in 'data/{graph_name}/indeg'.
-# ./SelectHubs indeg
+
 
 stopRea="0.005 0.001"  # small graph
 for((i=0;i<2;i++));do
