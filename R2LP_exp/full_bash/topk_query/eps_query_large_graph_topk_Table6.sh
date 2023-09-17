@@ -1,4 +1,4 @@
-cd code
+cd ../../code
 rm main_large_graph_topk
 g++ -march=core2  -std=c++11 -DSFMT_MEXP=607 -I SFMT-src-1.4.1/ -O3 -o main_large_graph_topk main_large_graph_topk.cpp SFMT.c
 fn=("WZ")
