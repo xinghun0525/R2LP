@@ -1,4 +1,4 @@
-cd code
+cd ../../code
 rm main_small_graph_topk
 make main_small_graph_topk
 fn=("CG WV")
