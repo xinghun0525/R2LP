@@ -92,19 +92,16 @@ int main(int argc, char **argv){
 	// 	}
 	// }
 	// fout.close();
-
 	cout << "gtnum = " << gtnum << endl;
-
-	
     string anspath;
-    if(algo_name == "rbs")
-    	anspath = base_path + "../rbs-sim_exp/result_eps/" + filename + "/eps_" + seps;
+    if(algo_name == "R2LP")
+    	anspath = base_path + "../R2LP_exp/result_eps/" + filename + "/eps_" + seps;
     else if(algo_name == "optlp")
         anspath = base_path + "../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + ".ans_eps" + to_string(eps);
 	else if(algo_name == "flp")
         anspath = base_path + "../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/" + filename + ".ans_eps" + to_string(eps);
 	else if(algo_name == "UISim")
-		anspath = base_path + "../UISim_yinghao/result/" + filename + "/Hubs" + to_string(int(eps));
+		anspath = base_path + "../UISim2020-main/result/" + filename + "/Hubs" + to_string(int(eps));
 
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;

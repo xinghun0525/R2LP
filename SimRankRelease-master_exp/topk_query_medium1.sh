@@ -1,4 +1,6 @@
-cd Local-Push/build
+cd Local-Push/playground/
+cp main_exec_reduced_local_push_thres.cpp main_exec_reduced_local_push.cpp
+cd ../build
 cmake .. -DBUILD_PLAYGROUND=OFF -DEXTRA_INCLUDE_DIR=../../dependencies/include/Eigen -DDATA_ROOT_PATH=../../dataset
 make -j
 # fn=("SD" "DB" "WF" "ND")
