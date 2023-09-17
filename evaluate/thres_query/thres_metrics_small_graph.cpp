@@ -95,10 +95,10 @@ int main(int argc, char **argv){
 	// fout.close();
 	cout << "gtnum = " << gtnum << endl;
     string anspath;
-    if(algo_name == "rbs")
-    	anspath = base_path + "../rbs-sim_exp/result_thres/" + filename + "/t" + sthres + "_r" + srou;
+    if(algo_name == "r2lp")
+    	anspath = base_path + "../R2LP-sim_exp/result_thres/" + filename + "/t" + sthres + "_r" + srou;
     else if(algo_name == "optlp")
-        anspath = base_path + "../SimRankRelease-master/Local-Push/result/" + filename +".ans_t" + sthres + "_r" + srou;
+        anspath = base_path + "../SimRankRelease-master_exp/Local-Push/result/" + filename +".ans_t" + sthres + "_r" + srou;
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;
 

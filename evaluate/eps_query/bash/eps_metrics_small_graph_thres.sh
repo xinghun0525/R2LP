@@ -1,10 +1,8 @@
 make eps_metrics_small_graph_thres
-fn=("ND")
-eps=("0.01")
-thres=("0.001")
-# eps=("0.00001")
-#  "0.00001")
-algo_name=("optlp")
+fn=("CG" "WV" "EN")
+eps=("0.05" "0.01" "0.005" "0.001")
+thres=("0.1" "0.01" "0.001")
+algo_name=("r2lp" "optlp" "flp")
 for a in ${algo_name[*]}; do
     for i in ${fn[*]}; do
         for j in ${eps[*]}; do

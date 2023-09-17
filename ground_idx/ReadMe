@@ -1,0 +1,7 @@
+There are `idx1` for 3 small graph datasets {CG, WV, EN} which covers all nodes.
+
+There are `idx1` for 4 medieum graph datasets {SD, DB, WF, ND} which covers all nodes.
+There are `idx2` for 4 medieum graph datasets {SD, DB, WF, ND} which random selected 1000 nodes for each graph, and only need to evaluate the threshold query and topk query.
+
+There are `idx1` for 3 large graph datasets {CP, LJ, WZ} which random selected 100 nodes and only save and consider their sinlge-target simrank results as evaluation.
+There are `idx2` for 3 large graph datasets {CP, LJ, WZ} which has 1000 nodes for each graph, and only need to evaluate the threshold query and topk query.

@@ -1,9 +1,7 @@
 make eps_metrics_large_graph
-# fn=("CP" "LJ" "WZ")
 fn=("CP" "WZ" "LJ")
 eps=("0.1" "0.05" "0.01")
-# eps=("0.1" "0.05" "0.01" "0.005")
-algo_name=("flp")
+algo_name=("r2lp" "optlp")
 for a in ${algo_name[*]}; do
     for i in ${fn[*]}; do
         mkdir -p ./log/eps_query/$a/$i/

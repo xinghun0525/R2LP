@@ -21,6 +21,7 @@
 // #include <direct.h>
 
 using namespace std;
+// typedef long long ll;
 using ll = long long;
 bool maxScoreCmp(const pair<int, double>& a, const pair<int, double>& b){
     return a.second > b.second;
@@ -28,22 +29,25 @@ bool maxScoreCmp(const pair<int, double>& a, const pair<int, double>& b){
 
 int main(int argc, char **argv){
 	string filename = argv[1];
-	// double threshold = atof(argv[2]);
-	// string sthres = to_string(threshold);
-	double eps = atof(argv[2]);
-	string seps = to_string(eps);
-    string algo_name = argv[3];
-	double threshold = (1e-3) - (1e-7);
-
+	double threshold = atof(argv[2]);
+	string sthres = to_string(threshold);
+	double rou = atof(argv[3]);
+	string srou = to_string(rou);
+    string algo_name = argv[4];
+	// string base_path = "/data/geQian/packing_gq/get_metrics/";
+	// string filename = "WV";
+	// double eps = 0.01;
+	// string seps = to_string(eps);
+	// double threshold = 0.1;
+    // string algo_name = "optlp";
     time_t now = time(nullptr); 
 	char* curr_time = ctime(&now); cout << curr_time <<endl;
-	string base_path = "";
-    
+	string base_path = ""; 
 
-    cout << "filename = " << filename << ", eps = " << eps << endl;
-	unordered_set<int> ground_idx;
+    cout << "filename = " << filename << ", rou = " << rou << ", threshold = " << threshold << endl;
+    unordered_set<int> ground_idx;
     ifstream fin;
-    string idx_path = "../ground_idx/" + filename + "/idx1";
+    string idx_path = base_path + "../ground_idx/" + filename + "/idx1";
 	cout << "idx_path = " << idx_path << endl;
     fin.open(idx_path.data());
     assert(fin.is_open());
@@ -57,13 +61,13 @@ int main(int argc, char **argv){
     unordered_map<int, unordered_map<int, double> > gt_sim;
 	
 	int gtnum = 0;
+    int a, b; double sim;
     string groundtruth_path = "../ExactSim-master/results/" + filename + "/1e-06/";
     for(auto a: ground_idx){
         string gtpath = groundtruth_path + to_string(a) + ".txt";
         // cout << gtpath << endl;
         fin.open(gtpath.data());
         assert(fin.is_open());
-        int b; double sim;
         while(fin >> b >> sim){
             if(sim < threshold || a == b)
                 continue;
@@ -75,37 +79,27 @@ int main(int argc, char **argv){
         }
         fin.close();
     }
-	// ofstream fout;
-	// fout.open(("gt/" + filename + sthres + ".gt").c_str());
-	// for(const auto &a: gt_sim){
-	// 	for(const auto &b:a.second){
-	// 		fout << a.first << " " << b.first << " " << b.second << endl;
-	// 	}
-	// }
-	// fout.close();
+	ofstream fout;
+	fout.open(("gt/" + filename + sthres + ".gt").c_str());
+	for(const auto &a: gt_sim){
+		for(const auto &b:a.second){
+			fout << a.first << " " << b.first << " " << b.second << endl;
+		}
+	}
+	fout.close();
 	cout << "gtnum = " << gtnum << endl;
     string anspath;
-    if(algo_name == "R2LP")
-    	anspath = base_path + "../R2LP_exp/result_eps/" + filename + "/eps_" + seps;
+    if(algo_name == "r2lp")
+    	anspath = base_path + "../R2LP-sim_exp/result_thres/" + filename + "/t" + sthres + "_r" + srou;
     else if(algo_name == "optlp")
-        anspath = base_path + "../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + ".ans_eps" + to_string(eps);
-	else if(algo_name == "flp")
-        anspath = base_path + "../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/" + filename + ".ans_eps" + to_string(eps);
-	else if(algo_name == "UISim")
-		anspath = base_path + "../UISim2020-main/result/" + filename + "/Hubs" + to_string(int(eps));
-
+        anspath = base_path + "../SimRankRelease-master_exp/Local-Push/thres_result/" + filename +".ans_t" + sthres + "_r" + srou;
 	unordered_map<int, unordered_map<int, double> > my_sim;
 	cout << "anspath = " << anspath << endl;
 
 	fin.open(anspath.data());
 	assert(fin.is_open());
 	ll mynum11 = 0;
-	if(algo_name == "UISim"){
-		string st_time;
-		fin >> st_time;
-		cout << st_time << endl;
-	}
-	int a, b; double sim;
+	// int a,b; double sim;
 	while(fin >> a >> b >> sim){
         if(sim < threshold || a == b) 
             continue;

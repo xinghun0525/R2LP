@@ -17,26 +17,42 @@
 #include <unordered_set>
 #include <unordered_map>
 #include <unistd.h>
+#include <ctime>
+// #include <direct.h>
 
 using namespace std;
-
+// typedef long long ll;
+using ll = long long;
 bool maxScoreCmp(const pair<int, double>& a, const pair<int, double>& b){
     return a.second > b.second;
 }
 
 int main(int argc, char **argv){
 	string filename = argv[1];
-	double eps = atof(argv[2]);
-	string seps = to_string(eps);
-	double threshold = atof(argv[3]);
-    string algo_name = argv[4];
-    
+	// double threshold = atof(argv[2]);
+	// string sthres = to_string(threshold);
+	double eps = atof(argv[2]); // if 
+	string seps = to_string(eps); 
+    string algo_name = argv[3];
+	double threshold = atof(argv[4]);
+	if(algo_name == "UISim"){
+		eps = atoi(argv[2]);
+		seps = to_string(int(eps));
+	}
+	int hubs = 0;
+	// if(argc > 4){
+	// 	hubs = atoi(argv[4]);
+	// }
 
-    cout << "filename = " << filename << ", eps = " << eps << ", threshold = " << threshold << endl;
-	
+	time_t now = time(nullptr); 
+	char* curr_time = ctime(&now); cout << curr_time <<endl;
+	string base_path = "";
+
+    cout << "filename = " << filename << ", eps = " << eps << endl;
     unordered_set<int> ground_idx;
     ifstream fin;
     string idx_path = "../ground_idx/" + filename + "/idx1";
+	cout << "idx_path = " << idx_path << endl;
     fin.open(idx_path.data());
     assert(fin.is_open());
     int x;
@@ -45,51 +61,71 @@ int main(int argc, char **argv){
     }
     cout << "ground_idx.size = " << ground_idx.size() << endl;
 
-
+	fin.close();
     unordered_map<int, unordered_map<int, double> > gt_sim;
 	
 
-    string groundtruth_path = "../ExactSim-master/results/" + filename + "/1e-06/";
-    for(auto a: ground_idx){
-        string gtpath = groundtruth_path + to_string(a) + ".txt";
-        // cout << gtpath << endl;
-        fin.open(gtpath.data());
-        assert(fin.is_open());
-        int b; double sim;
-        while(fin >> b >> sim){
-            if(sim < threshold || a == b)
-                continue;
-            if(a > b)
-                gt_sim[a][b] = sim;
-            else
-                gt_sim[b][a] = sim;
-        }
-        fin.close();
-    }
+    string groundtruth_path = "../SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
+
+	string gtpath = groundtruth_path;
+	// cout << gtpath << endl;
+	fin.open(gtpath.c_str());
+	assert(fin.is_open());
+	int a; int b; double sim;
+	int gtnum = 0;
+	while(fin >> a >> b >> sim){
+		if(sim < threshold || a == b)
+			continue;
+		if(a > b)
+			gt_sim[a][b] = sim;
+		else
+			gt_sim[b][a] = sim;
+		++gtnum;
+	}
+	fin.close();
+
+
+	cout << "gtnum = " << gtnum << endl;
+
+	
     string anspath;
-    if(algo_name == "rbs")
-    	anspath = "../rbs-sim/result/threshold/" + filename + "/" + seps;
+    if(algo_name == "r2lp")
+    	anspath = base_path + "../R2LP_exp/result_eps/" + filename + "/eps_" + seps;
     else if(algo_name == "optlp")
-        anspath = "../SimRankRelease-master/Local-Push/result/" + filename +".ans" + seps;
+        anspath = base_path + "../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + ".ans_eps" + to_string(eps);
+	else if(algo_name == "flp")
+        anspath = base_path + "../SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/" + filename + ".ans_eps" + to_string(eps);
+	else if(algo_name == "UISim")
+		anspath = base_path + "../UISim2020-main/result/" + filename + "/Hubs" + to_string(int(eps));
+
 	unordered_map<int, unordered_map<int, double> > my_sim;
+	cout << "anspath = " << anspath << endl;
+
 	fin.open(anspath.data());
 	assert(fin.is_open());
-    int a,b; double sim;
+	ll mynum11 = 0;
+	if(algo_name == "UISim"){
+		string st_time;
+		fin >> st_time;
+		cout << st_time << endl;
+	}
 	while(fin >> a >> b >> sim){
-        if(sim < threshold)
+        if(sim < threshold || a == b) 
             continue;
 		if(a > b) 
 			my_sim[a][b] = sim;
 		else if(a < b)
 			my_sim[b][a] = sim;
+		mynum11++;
 	}
 	fin.close(); 
+	cout << "mynum = " << mynum11 << endl;
 	// for(int i = 0; i < n; ++i)
 	// 	my_sim[i][i] = 1.0;
 
 	
 	double avg_error = 0.0;
-	int tnum = 0; int mynum = 0; int tpnum = 0; 
+	ll tnum = 0; ll mynum = 0; ll tpnum = 0; 
 	for(auto &i : gt_sim){
 		a = i.first;
 		for(auto &j : i.second){
@@ -107,15 +143,15 @@ int main(int argc, char **argv){
 			}
 		}
 	}
-	avg_error /= tpnum;
+	avg_error /= tnum;
 	for(auto &i : my_sim){
 		for(auto &j: i.second){
 			if(j.second >= threshold)
 				++mynum;
 		}
 	}
-	double precision = (tpnum+0.0) / tnum;
-	double recall = (tpnum+0.0) / mynum;
+	double precision = (tpnum+0.0) / mynum;
+	double recall = (tpnum+0.0) / tnum;
 	double f1score = (2*recall*precision)/(recall + precision);
 	cout << "ground truth pairs num = " << tnum << endl;
 	cout << "my pairs num = " << mynum << endl;

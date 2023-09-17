@@ -1,4 +1,4 @@
-These code are modified from https://github.com/KeithYue/SimRankRelease, and you need to build environment according to the https://github.com/KeithYue/SimRankRelease. Such as `libunwind` and `gperftools` to satisfy `-ltmalloc`. 
+These codes are modified from https://github.com/KeithYue/SimRankRelease, and you need to build environment according to the https://github.com/KeithYue/SimRankRelease. Such as `libunwind` and `gperftools` to satisfy `-ltmalloc`. 
 
 
 Need to copy dataset to `SimRankRelease-master_exp/dataset/edge_list` and remove the first line.

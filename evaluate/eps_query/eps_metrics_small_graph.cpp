@@ -94,7 +94,7 @@ int main(int argc, char **argv){
 	// fout.close();
 	cout << "gtnum = " << gtnum << endl;
     string anspath;
-    if(algo_name == "R2LP")
+    if(algo_name == "r2lp")
     	anspath = base_path + "../R2LP_exp/result_eps/" + filename + "/eps_" + seps;
     else if(algo_name == "optlp")
         anspath = base_path + "../SimRankRelease-master_exp/Local-Push/eps_result/" + filename + ".ans_eps" + to_string(eps);

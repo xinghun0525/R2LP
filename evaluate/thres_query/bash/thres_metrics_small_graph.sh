@@ -1,9 +1,8 @@
 make thres_metrics_small_graph
-fn=("SD" "DB" "WF" "ND")
-thres=("0.05" "0.01" "0.005")
-rou=("0.9" "0.95" "0.97")
-
-algo_name=("rbs")
+fn=("CG" "WV" "EN")
+thres=("0.1" "0.01" "0.001")
+rou=("0.9" "0.95" "0.99")
+algo_name=("r2lp" "optlp")
 for a in ${algo_name[*]}; do
     for i in ${fn[*]}; do
         mkdir -p ./log/thres_query/$a/$i/
