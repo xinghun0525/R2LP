@@ -60,7 +60,7 @@ filedata = {
 }
 
 
-def plot_b1b2sj(filepath, filename):
+def plot_b1b2sj(filename):
     t1 = time.time()
 
     fontsize = 80
@@ -94,12 +94,9 @@ def plot_b1b2sj(filepath, filename):
     print(f"{filename} plot finished. cost {time.time() - t1}s")
 
 if __name__ == "__main__":
-    rootpath = "../../middle_file/"
     filelist = ['CG', 'WV', 'EN', 'SD', 'wiki_fy', 'DB', 'ND']
-
     for filename in filelist:
-        filepath = rootpath + filename
-        plot_b1b2sj(filepath, filename)
+        plot_b1b2sj(filename)
 
 
 

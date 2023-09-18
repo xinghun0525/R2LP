@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	int topk = 5000;
 
-	string filepath = "/data/geQian/packing_gq/dataset/" + filename + ".txt";
+	string filepath = "../../dataset/" + filename + ".txt";
 	
 	cout << "filepath: " << filepath << ", max_length: " << max_length << ", times: " << times << ", eps: " << str_eps << endl;
 

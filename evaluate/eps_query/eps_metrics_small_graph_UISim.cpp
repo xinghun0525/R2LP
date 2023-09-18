@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 	unordered_set<int> ground_idx;
 	ifstream fin;
 
-	string idx_path = "/data/geQian/packing_gq/ground_idx/" + filename + "/idx1";
+	string idx_path = "../../ground_idx/" + filename + "/idx1";
 
 	cout << "idx_path = " << idx_path << endl;
 	fin.open(idx_path.data());
@@ -70,7 +70,7 @@ int main(int argc, char **argv)
 	fin.close();
 	unordered_map<int, unordered_map<int, double>> gt_sim;
 
-	string groundtruth_path = "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
+	string groundtruth_path = "../../SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
 
 	string gtpath = groundtruth_path;
 	// cout << gtpath << endl;
@@ -96,16 +96,10 @@ int main(int argc, char **argv)
 
 	string mfilename = "_stopRea" + stop_rea;
 	string anspath;
-	if (algo_name == "rbs")
-		anspath = base_path + "/data/geQian/packing_gq/rbs-sim_exp/result_eps/" + filename + "/eps_" + seps;
-	else if (algo_name == "optlp")
-		anspath = base_path + "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/eps_result/" + filename + ".ans_eps" + to_string(eps);
-	else if (algo_name == "flp")
-		anspath = base_path + "/data/geQian/packing_gq/SimRankRelease-master_exp_flp/Local-Push/eps_result_flp/" + filename + ".ans_eps" + to_string(eps);
-	else if (algo_name == "UISim")
-		anspath = "/data/zhaoYingHao/UISim2020-main/result/" + filename + "/eta"+eta+"_stopRea" + stop_rea + "_topk5000";
+	if (algo_name == "UISim")
+		anspath = "../../UISim2020-main/result/" + filename + "/eta"+eta+"_stopRea" + stop_rea + "_topk5000";
 	else if (algo_name == "KSimJoin")
-		anspath = "/data/zhaoYingHao/KSimJoin/result/" + filename + "/" + filename + "_topk"+to_string(500)+".txt";
+		anspath = "../../KSimJoin/result/" + filename + "/" + filename + "_topk"+to_string(500)+".txt";
 
 	unordered_map<int, unordered_map<int, double>> my_sim;
 

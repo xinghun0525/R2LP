@@ -40,7 +40,7 @@ bool max_comp_Sim_pair(const Sim_pair & sp1, const Sim_pair & sp2){
 }
 
 
-// The function reads the ground truth for each graph, sorts it, and saves the top-k entries into the `/data/geQian/packing_gq/topk_metrics/gt` directory.
+// The function reads the ground truth for each graph, sorts it, and saves the top-k entries into the `./gt` directory.
 int main(int argc, char **argv){
 	string filename = argv[1];
 
@@ -53,7 +53,7 @@ int main(int argc, char **argv){
 	vector<int> nodeid_list;
 	unordered_set<int> ground_idx;
     ifstream fin;
-    string idx_path = "/data/geQian/packing_gq/ground_idx/" + filename + "/idx1";
+    string idx_path = "../../ground_idx/" + filename + "/idx1";
 	cout << "idx_path = " << idx_path << endl;
     fin.open(idx_path.data());
     assert(fin.is_open());
@@ -67,7 +67,7 @@ int main(int argc, char **argv){
 	fin.close();
     unordered_map<int, unordered_map<int, double> > gt_sim;
 	
-    string groundtruth_path = "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
+    string groundtruth_path = "../../SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
 
 	string gtpath = groundtruth_path;
 	fin.open(gtpath.c_str());

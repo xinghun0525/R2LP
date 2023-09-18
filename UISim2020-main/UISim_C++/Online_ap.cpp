@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
   Config::indexDir = argv[8];
   Config::outputDir = argv[9];
 
-  // 将结果全输出
+
   int k = -1;
   cout << "Graph nodes is " << Config::nodeFile << endl;
   cout << "Graph edges is " << Config::edgeFile << endl;
