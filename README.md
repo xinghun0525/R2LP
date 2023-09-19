@@ -25,7 +25,6 @@ The project directory is organized as follows:
 + `UISim202-main`: Codebase modified from [UISim2020](https://github.com/UISim2020/UISim2020).
 + `KSimJoin`: This section details the replication of the KSimJoin algorithm based on the research paper.
 + `evaluate`: The evaluation code for different algorithms under different datasets.
-+ `plot_figure`: The code for generating experimental result plots for different algorithms under different datasets.
 
 
 ## Run the Code
@@ -69,6 +68,9 @@ The project directory is organized as follows:
    You can evaluate the query results from the `evaluate` folder.
 
 
+### **6.Plot figure**
+
+   You can create experiment results plots in the `plot_figure` folder.
 ### **6.Plot figure**
 
    You can draw experimental result figures in the `plot_figure` folder.

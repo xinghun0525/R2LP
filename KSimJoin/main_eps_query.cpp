@@ -14,7 +14,7 @@ int main(int argc, char** argv){
 	char* curr_time = ctime(&now); cout << curr_time <<endl;
 	int topk = 500;
 	
-	string filepath = "/data/geQian/packing_gq/dataset/" + filename + ".txt";
+	string filepath = "../../dataset/" + filename + ".txt";
 	
 
 	cout << "filepath: " << filepath << ", max_length: " << max_length << ", times: " << times << ", eps: " << eps << endl;

@@ -70,8 +70,8 @@ int main(int argc, char **argv)
 	unordered_map<int, unordered_map<int, double>> gt_sim;		 
 	unordered_map<int, unordered_map<int, double>> gt_sim_all_k; 
 
-	string groundtruth_path = "/data/zhaoYingHao/metrics_exp/gt/" + filename + "_topk" + to_string(topk) + ".gt";
-	string gt_all_k_path = "/data/zhaoYingHao/metrics_exp/gt/" + filename + "_all.gt";
+	string groundtruth_path = "./gt/" + filename + "_topk" + to_string(topk) + ".gt";
+	string gt_all_k_path = "./gt/" + filename + "_all.gt";
 	string gtpath = groundtruth_path;
 
 	ifstream fin;
@@ -110,16 +110,12 @@ int main(int argc, char **argv)
 
 	string anspath;
 	// string mfilename = "_stopRea" + stop_rea;
-	if (algo_name == "rbs")
-		anspath = base_path + "../rbs-sim/result/" + filename + "/topk_" + stopk;
-	else if (algo_name == "optlp")
-		anspath = base_path + "../SimRankRelease-master/Local-Push/eps_result/" + filename + "_topk" + stopk;
-	else if (algo_name == "UISim")
+	if (algo_name == "UISim")
 	{
-		anspath = "/data/zhaoYingHao/UISim2020-main/result/" + filename + "/eta" + seta + "_stopRea" + stop_rea + "_topk5000";
+		anspath = "../../UISim2020-main/result/" + filename + "/eta" + seta + "_stopRea" + stop_rea + "_topk5000";
 	}
 	else if (algo_name == "KSimJoin")
-		anspath = "/data/zhaoYingHao/KSimJoin/result/" + filename + "/" + "topk_times"+stop_rea+"_length"+ seta+"_eps"+ seps +".txt";
+		anspath = "../../KSimJoin/result/" + filename + "/" + "topk_times"+stop_rea+"_length"+ seta+"_eps"+ seps +".txt";
 
 	unordered_map<int, unordered_map<int, double>> my_sim;
 	vector<Sim_pair> vec_my_sim;

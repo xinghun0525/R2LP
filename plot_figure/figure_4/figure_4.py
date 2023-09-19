@@ -61,7 +61,7 @@ def plot_simrank_total(dataset_folder, simrank_file, title='Small'):
             filename = "WF"
         elif filename == "wiki_zh":
             filename = "WZ"
-        plt.plot(xdata, ydata, marker='o', linestyle="", linewidth=lineweight,  label=filename, markersize=markersize)  
+        plt.plot(xdata, ydata, marker='o', linestyle="", linewidth=lineweight,  label=filename, markersize=markersize)
         print(f"ploat {filename} done, cost {time.time() - t_s}s")
 
 
@@ -90,10 +90,10 @@ def read_simrank(filepath_p):
 
 if __name__ == "__main__":
     
-    dataset_folder = "/data/geQian/packing_gq/SimRankRelease-master/Local-Push/ground_truth/"
+    dataset_folder = "../../SimRankRelease-master_exp/Local-Push/ground_truth/"
     dataset_folder = "./middle_file/"
 
-    # plot_simrank_total(dataset_folder, small_graph, title="Small")
+    plot_simrank_total(dataset_folder, small_graph, title="Small")
     plot_simrank_total(dataset_folder, middle_graph, title="Middle")
 
 
