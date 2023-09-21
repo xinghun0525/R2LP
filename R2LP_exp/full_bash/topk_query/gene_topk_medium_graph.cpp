@@ -67,8 +67,7 @@ int main(int argc, char **argv) {
 	fin.close();
 	unordered_map<int, unordered_map<int, double> > gt_sim;
 
-	string groundtruth_path = "../SimRankRelease-master/Local-Push/ground_truth/" + filename;
-	//string groundtruth_path = "/data/geQian/packing_gq/SimRankRelease-master_exp/Local-Push/ground_truth/" + filename;
+	string groundtruth_path = "../../../SimRankRelease-master/Local-Push/ground_truth/" + filename;
 
 	string gtpath = groundtruth_path;
 	fin.open(gtpath.c_str());
@@ -177,7 +176,6 @@ int main(int argc, char **argv) {
 			gt_sim[i.a][i.b] = i.sim;
 		}
 
-		// string respath = "/data/geQian/packing_gq/topk_metrics/gt/";
 		string respath = "./gt/";
 		cout << "开始保存文件, 路径为 " << respath + filename + "_topk" + to_string(topk) + ".gt" << endl;
 
