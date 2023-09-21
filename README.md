@@ -70,7 +70,4 @@ The project directory is organized as follows:
 
 ### **6.Plot figure**
 
-   You can create experiment results plots in the `plot_figure` folder.
-### **6.Plot figure**
-
    You can draw experimental result figures in the `plot_figure` folder.
