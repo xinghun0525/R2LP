@@ -1,4 +1,4 @@
-this code is for experiment of Table 6 in our paper.
+this code is for experiment of Table 4 and Table 6 in our paper.
 
 bash eps_query_small_graph_Table4_*.sh # calculate R2LP's deterministic and randomized push number in terms of edge traversal with or without pruning for small and middle graph
 bash eps_query_large_graph_Table4_*.sh # calculate R2LP's deterministic and randomized push number in terms of edge traversal with or without pruning for large graph
